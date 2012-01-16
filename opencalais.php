@@ -109,7 +109,7 @@ class OpenCalais {
   }
   $reader->closeStream();
  
-$dateiname = "output.rdf"; 
+$dateiname = "output_calais.rdf"; 
 $handler = fOpen($dateiname , "w+");
 fWrite($handler , $r);
 fClose($handler); 
