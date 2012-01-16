@@ -1,0 +1,31 @@
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+owl:Thing
+      a       owl:Class .
+
+<http://purl.org/olia/system.owl#UnitOfAnnotation>
+      a       owl:Class ;
+      rdfs:comment """A UnitOfAnnotation is a structural entity that can be annotated, e.g., a word, token, constituent, or another types of markable.
+Word classes, etc., are then modelled as indirect children of UnitOfAnnotation. The division between Features and classes of UnitsOfAnnotation follows conventional standards.
+    """ ;
+      rdfs:subClassOf <http://purl.org/olia/system.owl#LinguisticAnnotation> .
+
+<http://purl.org/olia/system.owl#LinguisticAnnotation>
+      a       owl:Class ;
+      rdfs:comment "Linguistic annotations pertain to either structural entities (words, tokens, constituents, sentences => UnitOfAnnotation), relations between these (dependency, dominance, coreference, etc. => Relation), or grammatical features attached to these (case, gender, number, agreement, tense, mood, aspect, ... => Feature)." ;
+      rdfs:subClassOf owl:Thing .
+
+<http://purl.org/olia/brown.owl#Tag>
+      a       owl:Class ;
+      rdfs:subClassOf <http://purl.org/olia/system.owl#UnitOfAnnotation> .
+
+<http://purl.org/olia/brown.owl#HL>
+      a       owl:Thing .
+
+<http://purl.org/olia/brown.owl#HeadlineWord>
+      a       owl:Class ;
+      rdfs:comment "This tag is used for words occurring in headline. It is hyphenated to the regular tag." ;
+      rdfs:subClassOf <http://purl.org/olia/brown.owl#Tag> .

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <rdf:Description rdf:about="http://nlp2rdf.lod2.eu/schema/error/">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://nlp2rdf.lod2.eu/schema/error/">
+    <rdfs:label>NIF Error Ontology</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://nlp2rdf.lod2.eu/schema/error/">
+    <rdfs:comment>A very simple error ontology. Hopefully it is possible to reuse a real error ontology. 
+So instead of extending this one the ontology might be replaced. Until then the ontology is underspecified, feel free to add any properties. </rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://nlp2rdf.lod2.eu/schema/error/hasMessage">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://nlp2rdf.lod2.eu/schema/error/hasMessage">
+    <rdfs:comment>the message of the error</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://nlp2rdf.lod2.eu/schema/error/hasMessage">
+    <rdfs:domain rdf:resource="http://nlp2rdf.lod2.eu/schema/error/Error"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://nlp2rdf.lod2.eu/schema/error/source">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://nlp2rdf.lod2.eu/schema/error/source">
+    <rdfs:comment>the source of the error as rdf:Literal</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://nlp2rdf.lod2.eu/schema/error/source">
+    <rdfs:domain rdf:resource="http://nlp2rdf.lod2.eu/schema/error/Error"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://nlp2rdf.lod2.eu/schema/error/fatal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://nlp2rdf.lod2.eu/schema/error/fatal">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://nlp2rdf.lod2.eu/schema/error/fatal">
+    <rdfs:comment> Whether the error is fatal. Fatal means, that no other sensible output could be produced. Use "1"^^xsd:boolean or "0"^^xsd:boolean </rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://nlp2rdf.lod2.eu/schema/error/fatal">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://nlp2rdf.lod2.eu/schema/error/fatal">
+    <rdfs:domain rdf:resource="http://nlp2rdf.lod2.eu/schema/error/Error"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://nlp2rdf.lod2.eu/schema/error/Error">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://nlp2rdf.lod2.eu/schema/error/Error">
+    <rdfs:label>Error</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://nlp2rdf.lod2.eu/schema/error/Error">
+    <rdfs:comment>An error. </rdfs:comment>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,464 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns="http://purl.org/olia/penn.owl#"
+    xmlns:olia_system="http://purl.org/olia/system.owl#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xml:base="http://purl.org/olia/penn.owl">
+  <owl:Ontology rdf:about="http://purl.org/olia/penn.owl">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    ></rdfs:comment>
+  </owl:Ontology>
+  <owl:DatatypeProperty rdf:about="http://purl.org/olia/system.owl#hasTag"/> 
+  <owl:DatatypeProperty rdf:about="http://purl.org/olia/system.owl#hasTier"/>
+  <owl:Class rdf:ID="Verb">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Tag"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="SuperlativeAdverb">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Adverb"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >These are superlative adverbs.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="GerundOrPresentParticiple">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This is a verb in present participle or in gerund.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/olia/penn.owl#Verb"/>
+  </owl:Class>
+  <owl:Class rdf:ID="WhAdverb">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This category includes "how", "where", "why", etc. When in a temporal sense is tagged as wh-adverb.  In the sense of "if",  on the other hand, it is a subordinating conjunction.
+EXAMPLES:
+"When/WRB he finally arrived,  I was on my way out."</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/olia/penn.owl#Adverb"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ComparativeAdjective">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >These are adjectives mostly with the comparative ending -er and a comparative meaning. "More" or "less" should be tagged as a comparative adjective when it is used without a head noun and it
+corresponds to the object of a verb or preposition.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Adjective"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="WhPronoun">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Pronoun"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This category includes "what", "who" and "whom".</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="ComparativeAdverb">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/olia/penn.owl#Adverb"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >These are comparative adverbs.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="WhDeterminer">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This category includes "which", as well as that when it is used as a relative pronoun.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Determiner"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="CoordinatingConjunction">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This category includes "and", "but", "nor", "or", "yet" (as in "Yet it's cheap", "cheap yet good"), as well as the mathematical operators "plus", "minus", "less", "times" (in the sense of "multiplied by") and "over" (in the sense of "divided by"), when they are spelled out.
+For in the sense of "because" is a coordinating conjunction.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Conjunction"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Predeterminer">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This category includes the following determinerlike elements when they precede an article or possessive pronoun.
+EXAMPLES:  
+all/PDT his marbles 
+nary/PDT a soul
+both/PDT the girls 
+quite/PDT a mess
+half/PDT his time 
+rather/PDT a nuisance
+many/PDT a moon 
+such/PDT a good time</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/olia/penn.owl#Determiner"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ModalVerb">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This category includes all verbs that don't take an -s ending in the third person singular present: "can", 
+"could", ("dare"), "may", "might", "must", "ought", "shall", "should", "will", "would".</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/olia/penn.owl#Verb"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PossessivePronoun">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/olia/penn.owl#Pronoun"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This category includes the adjectival possessive forms "my", "your", "his", "her", "its", "one's", "our" and "their".</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/olia/penn.owl#Adjective">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >These are adjectives, ordinal numerals, and ordinal numbers.
+Hyphenated compounds that are used as modifiers are tagged as adjectives, e.g. "happy-go-lucky", "one-of-a-kind", "run-of-the-mill". Ordinal numbers are tagged as adjectives, as are compounds of the form "n-th" or "X-est", like "fourth-largest".</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/olia/penn.owl#Tag"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/olia/penn.owl#Adverb">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This category includes most words that end in -ly as well as degree words like "quite", "too" and "very", posthead modifiers like "enough" and "indeed" (as in "good enough", "very well indeed"), and negative markers like "not", "n' t" and "never".</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/olia/penn.owl#Tag"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="PastParticiple">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This is a verb in past participle.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/olia/penn.owl#Verb"/>
+  </owl:Class>
+  <owl:Class rdf:ID="SuperlativeAdjective">
+    <rdfs:subClassOf rdf:resource="http://purl.org/olia/penn.owl#Adjective"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >These are adjectives with the superlative ending -est (as well as "worst"). "Most" and "least" can also be tagged as superlative adjective when they occur by themselves.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Interjection">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This category includes "my" (as in "My, what a gorgeous day"), "oh", "please",  "see" (as in "See	 it's like this"), "uh", "well" and "yes", among others.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/olia/penn.owl#Tag"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="To">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >"To" is tagged TO, regardless of whether it is a preposition or an infinitival marker.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/olia/penn.owl#Tag"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="PrepositionOrSubordinatingConjunction">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >We make no explicit distinction between prepositions and subordinating conjunctions. (The distinction is not lost, however - a preposition is an IN that precedes a noun phrase or a prepositional phrase, and a subordinate conjunction is an IN that precedes a clause).
+The preposition "to" has its own special tag TO.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/olia/penn.owl#Conjunction"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/olia/penn.owl#Conjunction">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/olia/penn.owl#Tag"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="ListItemMarker">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/olia/penn.owl#Tag"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This category includes letters and numerals when they are used to identify items in a list.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="ExistentialThere">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Existential "there" is the unstressed "there" that triggers inversion of the inflected verb and the logical subject of a sentence, e.g. "There/EX was a party in progress.", "There/EX ensued a melee.".</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/olia/penn.owl#Tag"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="PersonalPronoun">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This category includes the personal pronouns proper,  without regard for case distinctions ("I", "me", "you", "he", "him", etc.), the reflexive pronouns ending in -self or -selves, and the nominal possessive pronouns "mine", "yours", "his", "hers", "ours" and "theirs".</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/olia/penn.owl#Pronoun"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="CardinalNumber">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >These are cardinal numbers.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/olia/penn.owl#Tag"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="BePresentTense">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >These are verbforms in present tense. This class includes 3rd person singular or other than 3rd person singular verbforms.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/olia/penn.owl#Verb"/>
+  </owl:Class>
+  <owl:Class rdf:ID="BaseForm">
+    <rdfs:subClassOf rdf:resource="http://purl.org/olia/penn.owl#Verb"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This tag subsumes imperatives, infinitives and subjunctives.
+EXAMPLES:
+Imperative: Do/VB it.
+Infinitive: You should do/VB it.
+                We want them to do/VB it.
+                We made them do/VB it.
+Subjunctive: We suggested that he do/VB it.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="ForeignWord">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >These are foreign words.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/olia/penn.owl#Tag"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="CommonNoun">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Noun"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >These are common nouns in singular or plural, or mass nouns.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="ProperNoun">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/olia/penn.owl#Noun"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >These are singular or plural proper nouns.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/olia/penn.owl#Pronoun">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This is a class, we inserted to structure the tagset.</rdfs:comment>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/olia/penn.owl#Tag"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/olia/penn.owl#Determiner">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://purl.org/olia/penn.owl#Tag"/>
+    </rdfs:subClassOf>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This category includes the articles "a(n)", "every", "no" and "the", the indefinite determiners "another",  "any" and "some", "each", "either" (as in "either way"), "neither" (as in "neither decision"), "that", "these", "this" and "those", and instances of "all" and "both" when they do not precede a determiner or possessive pronoun (as in "all roads" or "both times").</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/olia/penn.owl#Tag">
+    <rdfs:subClassOf rdf:resource="http://purl.org/olia/system.owl#LinguisticAnnotation"/>
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >pos</owl:hasValue>
+        <owl:onProperty rdf:resource="http://purl.org/olia/system.owl#hasTier"/>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="http://purl.org/olia/penn.owl#Noun">
+    <rdfs:subClassOf rdf:resource="http://purl.org/olia/penn.owl#Tag"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This is a class, we inserted to structure the tagset.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="Symbol">
+    <rdfs:subClassOf rdf:resource="http://purl.org/olia/penn.owl#Tag"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This tag should be used for mathematical, scientific and technical symbols or expressions that aren't words of English. It should not used for any and all technical expressions. For instance, the names of chemicals, units of measurements (including abbreviations thereof)  and the like should be tagged as nouns.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="BePastTense">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This category includes the conditional form of the verb to be.
+EXAMPLES:
+If I were/VBD rich...
+If I were/VBD to win the lottery...</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/olia/penn.owl#Verb"/>
+  </owl:Class>
+  <owl:Class rdf:ID="PossessiveEnding">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >The possessive ending on nouns ending in 's or  is split off by the tagging algorithm and tagged as if it
+were a separate word. e.g. "John/ NP 's/POS idea", "the parents/NNS'/POS distress".</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://purl.org/olia/penn.owl#Tag"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Particle">
+    <rdfs:subClassOf rdf:resource="http://purl.org/olia/penn.owl#Tag"/>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This category includes a number of mostly monosyllabic words that also double as directional adverbs and prepositions.</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:ID="PossessiveWhPronoun">
+    <rdfs:subClassOf rdf:resource="http://purl.org/olia/penn.owl#PossessivePronoun"/>
+    <rdfs:subClassOf rdf:resource="http://purl.org/olia/penn.owl#WhPronoun"/>
+  </owl:Class>
+  <Predeterminer rdf:ID="PDT">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PDT</olia_system:hasTag>
+  </Predeterminer>
+  <SuperlativeAdverb rdf:ID="RBS">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >RBS</olia_system:hasTag>
+  </SuperlativeAdverb>
+  <GerundOrPresentParticiple rdf:ID="VBG">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >VBG</olia_system:hasTag>
+  </GerundOrPresentParticiple>
+  <ListItemMarker rdf:ID="LS">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >LS</olia_system:hasTag>
+  </ListItemMarker>
+  <ProperNoun rdf:ID="NNP">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >NNP</olia_system:hasTag>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Proper noun singular</rdfs:comment>
+  </ProperNoun>
+  <Adverb rdf:ID="RB">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >adverb, negation</rdfs:comment>
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >RB</olia_system:hasTag>
+  </Adverb>
+  <Particle rdf:ID="PR">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PR</olia_system:hasTag>
+  </Particle>
+  <WhPronoun rdf:ID="WP">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >WP</olia_system:hasTag>
+  </WhPronoun>
+  <Determiner rdf:ID="DT">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >DT</olia_system:hasTag>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >determiner, also article</rdfs:comment>
+  </Determiner>
+  <PrepositionOrSubordinatingConjunction rdf:ID="IN">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >IN</olia_system:hasTag>
+  </PrepositionOrSubordinatingConjunction>
+  <To rdf:ID="TO">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >TO</olia_system:hasTag>
+  </To>
+  <PersonalPronoun rdf:ID="PP">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PP</olia_system:hasTag>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PP is the used Tag in "Part-of-Speech Tagging Guidelines for the Penn Treebank Project",  Beatrice Santorini, 15.03.1991"
+(http://www.ims.uni-stuttgart.de/projekte/corplex/TreeTagger/Penn-Treebank-Tagset.ps 21.11.07)</rdfs:comment>
+  </PersonalPronoun>
+  <PossessivePronoun rdf:ID="PPpossessive">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PP$is the used Tag in "Part-of-Speech Tagging Guidelines for the Penn Treebank Project",  Beatrice Santorini, 15.03.1991"
+(http://www.ims.uni-stuttgart.de/projekte/corplex/TreeTagger/Penn-Treebank-Tagset.ps 21.11.07)</rdfs:comment>
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PP$</olia_system:hasTag>
+  </PossessivePronoun>
+  <ForeignWord rdf:ID="FW">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >FW</olia_system:hasTag>
+  </ForeignWord>
+  <BePresentTense rdf:ID="VBZ">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Verb 3-rd person singular present</rdfs:comment>
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >VBZ</olia_system:hasTag>
+  </BePresentTense>
+  <CommonNoun rdf:ID="NNS">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >NNS</olia_system:hasTag>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Noun plural</rdfs:comment>
+  </CommonNoun>
+  <ProperNoun rdf:ID="NNPS">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >NNPS</olia_system:hasTag>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Proper noun plural</rdfs:comment>
+  </ProperNoun>
+  <PersonalPronoun rdf:ID="PRP">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PRP is the used Tag in "Part of Speech Tagging Guidelines for the Penn Treebank Project, June 1990" (ftp://ftp.cis.upenn.edu/pub/treebank/doc/tagguide.ps.gz  21.11.07)</rdfs:comment>
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PRP</olia_system:hasTag>
+  </PersonalPronoun>
+  <Symbol rdf:ID="SYM">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >SYM</olia_system:hasTag>
+  </Symbol>
+  <ComparativeAdjective rdf:ID="JJR">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >JJR</olia_system:hasTag>
+  </ComparativeAdjective>
+  <BaseForm rdf:ID="VB">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >VB</olia_system:hasTag>
+  </BaseForm>
+  <Interjection rdf:ID="UH">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >UH</olia_system:hasTag>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >interjections, exclamation</rdfs:comment>
+  </Interjection>
+  <WhDeterminer rdf:ID="WDT">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >WDT</olia_system:hasTag>
+  </WhDeterminer>
+  <CommonNoun rdf:ID="NN">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Noun singular or mass</rdfs:comment>
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >NN</olia_system:hasTag>
+  </CommonNoun>
+  <ModalVerb rdf:ID="MD">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >MD</olia_system:hasTag>
+  </ModalVerb>
+  <CardinalNumber rdf:ID="CD">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CD</olia_system:hasTag>
+  </CardinalNumber>
+  <PossessivePronoun rdf:ID="PRPpossessive">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PRP$</olia_system:hasTag>
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >PRP$ is the used Tag in "Part of Speech Tagging Guidelines for the Penn Treebank Project, June 1990" (ftp://ftp.cis.upenn.edu/pub/treebank/doc/tagguide.ps.gz  21.11.07)</rdfs:comment>
+  </PossessivePronoun>
+  <BePresentTense rdf:ID="VBP">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Verb non 3-rd person singular present</rdfs:comment>
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >VBP</olia_system:hasTag>
+  </BePresentTense>
+  <SuperlativeAdjective rdf:ID="JJS">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >JJS</olia_system:hasTag>
+  </SuperlativeAdjective>
+  <PossessiveEnding rdf:ID="POS">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >POS</olia_system:hasTag>
+  </PossessiveEnding>
+  <PossessiveWhPronoun rdf:ID="WPpossessive">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >WP$</olia_system:hasTag>
+  </PossessiveWhPronoun>
+  <ComparativeAdverb rdf:ID="RBR">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >RBR</olia_system:hasTag>
+  </ComparativeAdverb>
+  <Adjective rdf:ID="JJ">
+    <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >adjective, ordinal numeral, ordinal number</rdfs:comment>
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >JJ</olia_system:hasTag>
+  </Adjective>
+  <PastParticiple rdf:ID="VBN">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >VBN</olia_system:hasTag>
+  </PastParticiple>
+  <WhAdverb rdf:ID="WRB">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >WRB</olia_system:hasTag>
+  </WhAdverb>
+  <BePastTense rdf:ID="VBD">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >VBD</olia_system:hasTag>
+  </BePastTense>
+  <CoordinatingConjunction rdf:ID="CC">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CC</olia_system:hasTag>
+  </CoordinatingConjunction>
+  <ExistentialThere rdf:ID="EX">
+    <olia_system:hasTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >EX</olia_system:hasTag>
+  </ExistentialThere>
+</rdf:RDF>

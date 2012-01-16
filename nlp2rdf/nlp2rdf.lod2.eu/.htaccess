@@ -1,0 +1,62 @@
+
+# From http://www.w3.org/TR/swbp-vocab-pub/#recipe4 
+Options -MultiViews
+AddType application/rdf+xml .rdf .owl
+RewriteEngine On
+
+##################
+# Rewrite rule if *.owl files are requested
+##################
+RewriteRule ^schema/string/string.owl$ - [L] 
+RewriteRule ^schema/sso/sso.owl$ - [L] 
+RewriteRule ^schema/topic/topic.owl$ - [L] 
+RewriteRule ^schema/error/error.owl$ - [L] 
+
+##################
+# Rewrite rule to serve HTML content from the vocabulary URI if requested
+##################
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml.*(text/html|application/xhtml\+xml)
+RewriteCond %{HTTP_ACCEPT} text/html [OR]
+RewriteCond %{HTTP_ACCEPT} application/xhtml\+xml [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/.*
+RewriteRule ^schema/string/.*$ /schema/doc/string/index.html [R=303]
+
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml.*(text/html|application/xhtml\+xml)
+RewriteCond %{HTTP_ACCEPT} text/html [OR]
+RewriteCond %{HTTP_ACCEPT} application/xhtml\+xml [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/.*
+RewriteRule ^schema/sso/.*$ /schema/doc/sso/index.html [R=303]
+
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml.*(text/html|application/xhtml\+xml)
+RewriteCond %{HTTP_ACCEPT} text/html [OR]
+RewriteCond %{HTTP_ACCEPT} application/xhtml\+xml [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/.*
+RewriteRule ^schema/topic/.*$ /schema/doc/topic/index.html [R=303]
+
+RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml.*(text/html|application/xhtml\+xml)
+RewriteCond %{HTTP_ACCEPT} text/html [OR]
+RewriteCond %{HTTP_ACCEPT} application/xhtml\+xml [OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mozilla/.*
+RewriteRule ^schema/error/.*$ /schema/doc/error/index.html [R=303]
+
+
+##################
+# Rewrite rule to serve RDF/XML content if requested
+##################
+RewriteCond %{HTTP_ACCEPT} application/rdf\+xml
+RewriteRule ^schema/string/[a-zA-Z]*$ /schema/string/string.owl [R=303,L] 
+RewriteCond %{HTTP_ACCEPT} application/rdf\+xml
+RewriteRule ^schema/sso/[a-zA-Z]*$ /schema/sso/sso.owl [R=303,L] 
+RewriteCond %{HTTP_ACCEPT} application/rdf\+xml
+RewriteRule ^schema/topic/[a-zA-Z]*$ /schema/topic/topic.owl [R=303,L] 
+RewriteCond %{HTTP_ACCEPT} application/rdf\+xml
+RewriteRule ^schema/error/[a-zA-Z]*$ /schema/error/error.owl [R=303,L] 
+
+##################
+# Choose the default response
+# Rewrite rule to serve RDF/XML content by default
+##################
+RewriteRule ^schema/string/[a-zA-Z]*$ /schema/string/string.owl [R=303,L] 
+RewriteRule ^schema/sso/[a-zA-Z]*$ /schema/sso/sso.owl [R=303,L] 
+RewriteRule ^schema/topic/[a-zA-Z]*$ /schema/topic/topic.owl [R=303,L] 
+RewriteRule ^schema/error/[a-zA-Z]*$ /schema/error/error.owl [R=303,L] 
