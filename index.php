@@ -65,7 +65,7 @@ foreach ($triples as $i=>$t) {
 	if ($id===false || $id!==$t['s']) {
 		if ($id!==false && $os>=0 && $exact!=='') {
 			
-			$id = $prefix.rawurlencode(substr('offset_'.$os.'_'.($os+strlen($exact)).'_'.$exact, 0, 20));
+			$id = $prefix.rawurlencode(substr('offset_'.$os.'_'.($os+strlen($exact)).'_'.$exact, 0, 1000));
 			
 			foreach ($keys as $k) {
 				$triples[ $k ]['s'] = $id;
