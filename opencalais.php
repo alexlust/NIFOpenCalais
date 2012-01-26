@@ -1,7 +1,5 @@
 <?php
 
-
-
 class OpenCalais {
 
     private $api_url = 'http://api.opencalais.com/enlighten/rest/';

@@ -119,40 +119,11 @@ foreach($ids as $id=>$term) {
 	$output = preg_replace($find, "\n".$replace, $output,1);
 }
 
-
-
-
 $dateiname = "output_calais.n3"; 
 $handler = fOpen($dateiname , "w+");
 fWrite($handler , $output);
 fClose($handler); 
 print $output;
-/*
-$parser = ARC2::getTurtleParser();
-$parser->parse( $prefix, $output );
-$output = $parser->toRDFJSON($prefix);
-print $output;
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function getNerdList() {
 	$url = 'http://nerd.eurecom.fr/ui/ontology/nerd-last.n3';
