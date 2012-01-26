@@ -1,24 +1,14 @@
 <?php
 
-/**
-* Open Calais Tags
-* Last updated 1/16/2012
-* Copyright (c) 2012 Dan Grossman
-* http://www.dangrossman.info
-*
-* Please see http://www.dangrossman.info/open-calais-tags
-* for documentation and license information.
-*/
 
-class OpenCalaisException extends Exception {}
 
 class OpenCalais {
 
     private $api_url = 'http://api.opencalais.com/enlighten/rest/';
     private $api_key = 'hyh9hhy2eghaqcub5kdcs3ae';
 
-    public $contentType = 'text/html';
-    public $outputFormat = 'XML/RDF';
+    public $contentType = 'text/raw';
+    public $outputFormat = 'text/N3'; //text/N3';//XML/RDF';
     public $getGenericRelations = true;
     public $getSocialTags = true;
     public $docRDFaccessible = true;
@@ -28,15 +18,15 @@ class OpenCalais {
     public $submitter = '';
 
     private $document = '';
-	private $urli ="http://www.yesnet.yk.ca/schools/projects/renaissance/marcopolo.html";
+	
     private $entities = array();
 
-    public function OpenCalais($api_key, $link) {
+    public function OpenCalais($api_key) {
         if (empty($api_key)) {
             throw new OpenCalaisException('An OpenCalais API key is required to use this class.');
         }
         $this->api_key = $api_key;
-		$this->urli = $link;
+	
     }
 
    
@@ -48,7 +38,7 @@ class OpenCalais {
         if ($this->getSocialTags)
             $types[] = 'SocialTags';
         
-        $xml = '<c:params xmlns:c="http://s.opencalais.com/1/pred/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">';
+        $xml = '<c:params xmlns:c="http://s.opencalais.com/1/pred/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">';
         $xml .= '<c:processingDirectives ';
         $xml .= 'c:contentType="' . $this->contentType . '" ';
         $xml .= 'c:enableMetadataType="' . implode(',', $types) . '" ';
@@ -74,26 +64,15 @@ class OpenCalais {
     }
 
 
-  public function getCalaisResult() { //param $id, $text
+  public function getCalaisResult($text) { 
   
   $url = $this->api_url;
   $qs = 'licenseID=' . urlencode($this->api_key);
   $qs .= '&paramsXML=' . urlencode($this->getParamsXML());
-  
-  
-  $text = file_get_contents($this->urli);
-  
-  require_once( 'html2text.class.php');
-
- 
-  $h2t=new html2text();
-  $h2t->auto_tolower=false;
-  $text=$h2t->HtmlToText($text);
-
   $qs .= '&content=' . $text;
     
   return $this->getAPIResult($url, $qs);
-}
+  }
 
   public function getAPIResult($url, $qs) {
   include_once('/arc/ARC2.php');	
@@ -108,11 +87,7 @@ class OpenCalais {
     $r .= $d;
   }
   $reader->closeStream();
- 
-$dateiname = "output_calais.rdf"; 
-$handler = fOpen($dateiname , "w+");
-fWrite($handler , $r);
-fClose($handler); 
+
 return $r;
 	}
 	

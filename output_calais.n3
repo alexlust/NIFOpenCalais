@@ -1,0 +1,184 @@
+@prefix nerd: <http://nerd.eurecom.fr/ontology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ns0: <http://s.opencalais.com/1/type/sys/> .
+@prefix ns1: <http://s.opencalais.com/1/pred/> .
+@prefix ns2: <http://s.opencalais.com/1/type/lid/> .
+@prefix ns3: <http://s.opencalais.com/1/type/tag/> .
+@prefix ns4: <http://s.opencalais.com/1/type/cat/> .
+@prefix ns5: <http://s.opencalais.com/1/type/em/e/> .
+@prefix ns6: <http://s.opencalais.com/1/type/em/r/> .
+
+<http://prefix.given.by/theClient#offset_0_15_Presiden> rdf:type ns0:InstanceInfo ;
+                                                        ns1:detection "[]President Obama[ on Monday will call for a new minimum tax rate]" ;
+                                                        ns1:docId <http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e> ;
+                                                        ns1:exact "President Obama" ;
+                                                        ns1:length "15" ;
+                                                        ns1:offset "0" ;
+                                                        ns1:prefix "" ;
+                                                        ns1:subject <http://d.opencalais.com/genericHasher-1/0146cea0-79f2-3571-b518-c52480cdf71b> ;
+                                                        ns1:suffix " on Monday will call for a new minimum tax rate" .
+
+<http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e/Relevance/1> rdf:type ns0:RelevanceInfo ;
+                                                                                     ns1:docId <http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e> ;
+                                                                                     ns1:relevance "0.667" ;
+                                                                                     ns1:subject <http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e> .
+
+<http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e/lid/DefaultLangId> rdf:type ns2:DefaultLangId ;
+                                                                                           ns1:docId <http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e> ;
+                                                                                           ns1:lang <http://d.opencalais.com/lid/DefaultLangId/English> .
+
+<http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e/SocialTag/2> rdf:type ns3:SocialTag ;
+                                                                                     ns1:docId <http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e> ;
+                                                                                     ns1:importance "1" ;
+                                                                                     ns1:name "Politics" ;
+                                                                                     ns1:originalValue "Politics" ;
+                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/5e6b0d94-4f12-3589-953e-16a1ff786c9f> .
+
+<http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e/cat/1> rdf:type ns4:DocCat ;
+                                                                               ns1:category <http://d.opencalais.com/cat/Calais/SocialIssues> ;
+                                                                               ns1:categoryName "Social Issues" ;
+                                                                               ns1:classifierName "Calais" ;
+                                                                               ns1:docId <http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e> ;
+                                                                               ns1:score "0.950" .
+
+<http://prefix.given.by/theClient#offset_96_106_%241%20mil> rdf:type ns0:InstanceInfo ;
+                                                            ns1:detection "[tax rate for individuals making more than ]$1 million[ a year.]" ;
+                                                            ns1:docId <http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e> ;
+                                                            ns1:exact "$1 million" ;
+                                                            ns1:length "10" ;
+                                                            ns1:offset "96" ;
+                                                            ns1:prefix "tax rate for individuals making more than " ;
+                                                            ns1:subject <http://d.opencalais.com/genericHasher-1/736a403d-157b-3e80-86a7-acc404607cb2> ;
+                                                            ns1:suffix " a year." .
+
+<http://d.opencalais.com/pershash-1/cbc8c069-5e3f-3778-b9e5-e93f1c6d323a> rdf:type ns5:Person, nerd:Person ;
+                                                                          ns1:commonname "Barack Obama" ;
+                                                                          ns1:name "Obama" ;
+                                                                          ns1:nationality "N/A" ;
+                                                                          ns1:persontype "political" .
+
+<http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e/Relevance/3> rdf:type ns0:RelevanceInfo ;
+                                                                                     ns1:docId <http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e> ;
+                                                                                     ns1:relevance "0.667" ;
+                                                                                     ns1:subject <http://d.opencalais.com/genericHasher-1/736a403d-157b-3e80-86a7-acc404607cb2> .
+
+<http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e/meta> rdf:type ns0:DocInfoMeta ;
+                                                                              ns1:contentType "text/raw" ;
+                                                                              ns1:docId <http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e> ;
+                                                                              ns1:emVer "7.1.1103.5" ;
+                                                                              ns1:langIdVer "DefaultLangId" ;
+                                                                              ns1:language "English" ;
+                                                                              ns1:processingVer "CalaisJob01" ;
+                                                                              ns1:signature "digestalg-1|OsTELp0KW7FXDiqXkWA/ybIg1DI=|BVjvhp+Od/KdV6Ynr9+kI4SfPO0IEf+4tuYOkK6HBNhWeXzGq3gZqQ==" ;
+                                                                              ns1:stagsVer "1.0.0-b1-2009-11-12_16:54:24" ;
+                                                                              ns1:submissionDate "2012-01-26 10:45:54.242" ;
+                                                                              ns1:submitterCode "a725570a-cfa1-dd80-5c5d-1a4de627326f" .
+
+<http://d.opencalais.com/genericHasher-1/0146cea0-79f2-3571-b518-c52480cdf71b> rdf:type ns6:PersonCareer ;
+                                                                               ns1:careertype "political" ;
+                                                                               ns1:person <http://d.opencalais.com/pershash-1/cbc8c069-5e3f-3778-b9e5-e93f1c6d323a> ;
+                                                                               ns1:position <http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e> ;
+                                                                               ns1:status "current" .
+
+<http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e/SocialTag/8> rdf:type ns3:SocialTag ;
+                                                                                     ns1:docId <http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e> ;
+                                                                                     ns1:importance "1" ;
+                                                                                     ns1:name "Social Issues" ;
+                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/7677911f-f579-309a-9299-bb737b9e23b5> .
+
+<http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e/SocialTag/3> rdf:type ns3:SocialTag ;
+                                                                                     ns1:docId <http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e> ;
+                                                                                     ns1:importance "1" ;
+                                                                                     ns1:name "Barack Obama" ;
+                                                                                     ns1:originalValue "Barack Obama" ;
+                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/67379953-4d14-3fbc-8b87-6c23b89a5e5f> .
+
+<http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e> rdf:type ns0:DocInfo ;
+                                                                         ns1:allowDistribution "true" ;
+                                                                         ns1:allowSearch "true" ;
+                                                                         ns1:calaisRequestID "b5abcc5e-2041-c849-1351-ab1cc426e2da" ;
+                                                                         ns1:docDate "2012-01-26 10:45:54.539" ;
+                                                                         ns1:docRDFaccessible "true" ;
+                                                                         ns1:docTitle "" ;
+                                                                         ns1:document "President Obama on Monday will call for a new minimum tax rate for individuals making more than $1 million a year." ;
+                                                                         ns1:externalMetadata "" ;
+                                                                         ns1:id "http://id.opencalais.com/rhLfwfofOkF90ftcQ8blTQ" .
+
+<http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e/SocialTag/5> rdf:type ns3:SocialTag ;
+                                                                                     ns1:docId <http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e> ;
+                                                                                     ns1:importance "2" ;
+                                                                                     ns1:name "Punahou School alumni" ;
+                                                                                     ns1:originalValue "Punahou School alumni" ;
+                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/64bb3d9b-5146-3990-8b40-9108cb4e7039> .
+
+<http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e> rdf:type ns5:Position, nerd:Work ;
+                                                                               ns1:name "President" .
+
+<http://prefix.given.by/theClient#offset_0_9_President> rdf:type ns0:InstanceInfo ;
+                                                        ns1:detection "[]President[ Obama on Monday will call for a new minimum tax]" ;
+                                                        ns1:docId <http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e> ;
+                                                        ns1:exact "President" ;
+                                                        ns1:length "9" ;
+                                                        ns1:offset "0" ;
+                                                        ns1:prefix "" ;
+                                                        ns1:subject <http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e> ;
+                                                        ns1:suffix " Obama on Monday will call for a new minimum tax" .
+
+<http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e/cat/2> rdf:type ns4:DocCat ;
+                                                                               ns1:category <http://d.opencalais.com/cat/Calais/BusinessFinance> ;
+                                                                               ns1:categoryName "Business_Finance" ;
+                                                                               ns1:classifierName "Calais" ;
+                                                                               ns1:docId <http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e> ;
+                                                                               ns1:score "0.924" .
+
+<http://prefix.given.by/theClient#offset_10_15_Obama> rdf:type ns0:InstanceInfo ;
+                                                      ns1:detection "[President ]Obama[ on Monday will call for a new minimum tax rate]" ;
+                                                      ns1:docId <http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e> ;
+                                                      ns1:exact "Obama" ;
+                                                      ns1:length "5" ;
+                                                      ns1:offset "10" ;
+                                                      ns1:prefix "President " ;
+                                                      ns1:subject <http://d.opencalais.com/pershash-1/cbc8c069-5e3f-3778-b9e5-e93f1c6d323a> ;
+                                                      ns1:suffix " on Monday will call for a new minimum tax rate" .
+
+<http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e/SocialTag/1> rdf:type ns3:SocialTag ;
+                                                                                     ns1:docId <http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e> ;
+                                                                                     ns1:importance "1" ;
+                                                                                     ns1:name "United States" ;
+                                                                                     ns1:originalValue "United States" ;
+                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/359e9bfd-d04d-3ee5-931a-c69b04eac8d2> .
+
+<http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e/Relevance/2> rdf:type ns0:RelevanceInfo ;
+                                                                                     ns1:docId <http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e> ;
+                                                                                     ns1:relevance "0.667" ;
+                                                                                     ns1:subject <http://d.opencalais.com/pershash-1/cbc8c069-5e3f-3778-b9e5-e93f1c6d323a> .
+
+<http://d.opencalais.com/genericHasher-1/736a403d-157b-3e80-86a7-acc404607cb2> rdf:type ns5:Currency, nerd:Currency ;
+                                                                               ns1:name "USD" .
+
+<http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e/SocialTag/7> rdf:type ns3:SocialTag ;
+                                                                                     ns1:docId <http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e> ;
+                                                                                     ns1:importance "2" ;
+                                                                                     ns1:name "American Recovery and Reinvestment Act" ;
+                                                                                     ns1:originalValue "American Recovery and Reinvestment Act of 2009" ;
+                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/430e300d-949a-3582-9fc7-2d84d30b297e> .
+
+<http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e/SocialTag/4> rdf:type ns3:SocialTag ;
+                                                                                     ns1:docId <http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e> ;
+                                                                                     ns1:importance "2" ;
+                                                                                     ns1:name "Luo people" ;
+                                                                                     ns1:originalValue "Luo people" ;
+                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/b61bde35-f8fd-3d58-bfd6-cfcded6a5921> .
+
+<http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e/SocialTag/9> rdf:type ns3:SocialTag ;
+                                                                                     ns1:docId <http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e> ;
+                                                                                     ns1:importance "1" ;
+                                                                                     ns1:name "Business_Finance" ;
+                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/c1bf4420-4b56-3ef2-a429-06a6098bf2ef> .
+
+<http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e/SocialTag/6> rdf:type ns3:SocialTag ;
+                                                                                     ns1:docId <http://d.opencalais.com/dochash-1/4bf909c0-b476-3c25-aa8d-b00c57ee763e> ;
+                                                                                     ns1:importance "2" ;
+                                                                                     ns1:name "Political positions of Barack Obama" ;
+                                                                                     ns1:originalValue "Political positions of Barack Obama" ;
+                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/b78aa469-b451-3950-922c-652fa843caf5> .

@@ -1,0 +1,8 @@
+About
+
+This is an adapter for NLP2RDF and the OpenCalais Toolkit.
+Requirements
+
+    OpenCalais
+    ARC2
+Webservice: http://localhost/NIFOpenCalais/index.php?input-type=text&nif=true&prefix="hallo"&urirecipe=$urirecipe&input=
