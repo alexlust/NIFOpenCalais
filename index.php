@@ -22,30 +22,25 @@ Until a year ago the U.S. had delivered only about 9 percent of the promised aid
 
 ";
 (!empty($_GET['input'])) ?  $text = $_GET['input'] : $text = $demotext; 
-(!empty($_GET['prefix'])) ?  $prefix = $_GET['prefix'] : $prefix = "id:"; 
+(!empty($_GET['prefix'])) ?  $prefix = $_GET['prefix'] : $prefix = "https://github.com/alexlust/NIFOpenCalais#";
+(!empty($_GET['urirecipe'])) ?  $urirecipe = $_GET['urirecipe'] : $urirecipe = 'offset';
+(!empty($_GET['format'])) ?  $format = $_GET['format'] : $format = 'turtle';
+(!empty($_GET['context-length'])) ?  $context_length = $_GET['context-length'] : $context_length = 10;
 
-//?input-type=text&nif=true&prefix=&urirecipe=$urirecipe&input=
 
+if (!(($urirecipe == 'offset') || ($urirecipe == 'context-hash'))) echo "ungültige Parameter: ".$urirecipe;
+ 
+//$urirecipe = 'context-hash';
 $text = $oc->getCalaisResult($text);
 $prefix_nerd = "@prefix nerd: <http://nerd.eurecom.fr/ontology#> .";
 $triples = array();
 
 $ns = array(
        'rdf' => 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
+	   'nerd' => 'http://nerd.eurecom.fr/ontology#',
        'rdfs' => 'http://www.w3.org/2000/01/rdf-schema#',
-       'owl' => 'http://www.w3.org/2002/07/owl#',
-       'sso' => 'http://nlp2rdf.lod2.eu/schema/sso/',
-       'str' => 'http://nlp2rdf.lod2.eu/schema/string/',
-       'topic' => 'http://nlp2rdf.lod2.eu/schema/topic/',
-       'error' => 'http://nlp2rdf.lod2.eu/schema/error/',
-       'olia' => 'http://purl.org/olia/olia.owl#',
-       'olia-top' => 'http://purl.org/olia/olia-top.owl#',
-       'olia_system' => 'http://purl.org/olia/system.owl#',
-       'penn' => 'http://purl.org/olia/penn.owl#',
-       'penn-syntax' => 'http://purl.org/olia/penn-syntax.owl#',
-       'stanford' => 'http://purl.org/olia/stanford.owl#',
-       'nerd'	=> 'http://nerd.eurecom.fr/ontology#',
-       'brown' => 'http://purl.org/olia/brown.owl#');
+	   'foaf' => 'http://xmlns.com/foaf/0.1/',
+	   'dc' => 'http://purl.org/dc/elements/1.1/');
 
 $conf = array('ns' => $ns);
 
@@ -56,16 +51,22 @@ $triples = array_merge( $triples, $parser->getTriples());
 
 $id=false; $ids = array(); $keys = array(); $os=-1; $exact = ''; $type = ''; $dict = array();
 
-$temptriples = array();
-$temptriple = array('type'=>'triple', 's'=>'', 'p'=>'http://s.opencalais.com/1/pred/nerd', 'o'=>'', 's_type'=>'uri', 'p_type'=>'uri', 'o_type'=>'literal', 'o_datatype'=>'', 'o_lang'=>'' );
-
 $list = getNerdList();
+
+
+/*
+for ($i = 0, $i_max = count($triples); $i < $i_max; $i++) 
+
+          print_r($triples[$i]);
+*/
+
 
 foreach ($triples as $i=>$t) {
 	if ($id===false || $id!==$t['s']) {
 		if ($id!==false && $os>=0 && $exact!=='') {
-			
-			$id = $prefix.rawurlencode(substr('offset_'.$os.'_'.($os+strlen($exact)).'_'.$exact, 0, 1000));
+			if ($urirecipe == 'context-hash') {$id = $prefix.'hash_'.$context_length.'_'.strlen($exact).'_'.md5(substr($detl, -$context_length).$exact.substr($detr, 0, $context_length)).'_'.rawurlencode(substr($exact, 0, 20));}
+			else 
+			$id = $prefix.rawurlencode(substr('offset_'.$os.'_'.($os+strlen($exact)).'_'.$exact, 0, 20));
 			
 			foreach ($keys as $k) {
 				$triples[ $k ]['s'] = $id;
@@ -95,11 +96,31 @@ foreach ($triples as $i=>$t) {
 	else if (substr($t['p'], -10)== 'pred/exact') {
 		$exact = $t['o'];
 	}
-
+    if (substr($t['p'], -14)== 'pred/detection') {
+		$detection = $t['o'];
+		$det1 = explode(']', $detection);
+		$det2 = explode('[', $det1[0]);
+		$detl = $det2[1];
+		
+		$det1 = explode('[', $detection);
+		$det2 = explode(']', $det1[2]);
+		$detr = $det2[0];
+		
+		
+		
+	}
 	$keys[] = $i;
 }
 
 $ser = ARC2::getTurtleSerializer($conf);
+$output = $ser->getSerializedTriples($triples);
+$parser = ARC2::getRDFParser();
+$parser->parse($prefix, $output);
+$triples = $parser->getTriples();
+for ($i = 0, $i_max = count($triples); $i < $i_max; $i++) {
+  if ($triples[$i]['p'] == "http://s.opencalais.com/1/pred/id") $triples[$i]['o_type'] = "uri";
+ // print_r($triples[$i]);
+}
 $output = $prefix_nerd."\n".$ser->getSerializedTriples($triples);
 
 foreach($ids as $id=>$term) {
@@ -116,20 +137,111 @@ foreach($ids as $id=>$term) {
 	//SEMIKOLON VARIANTE 2
 	//$replace = "<".$id."> rdf:type $1:$2 ;\n".$indent."nerd:class \"".$term."\" ;";
 	
-	$output = preg_replace($find, "\n".$replace, $output,1);
+	$output = preg_replace($find, "\n".$replace, $output, 1);
 }
 
+
+
+$alltriples = array();
+$new_triples = array();
+//$temp_triple = array();
+$parser = ARC2::getTurtleParser();
+        $parser->parse($prefix, $output);
+        $triples = $parser->getTriples();
+		$triples1 = $parser->getTriples();
+        $alltriples = array_merge($alltriples, $triples);
+for ($i = 0, $i_max = count($alltriples); $i < $i_max; $i++) {
+  if (stristr($triples[$i]['o'] , "http://nerd.eurecom.fr/ontology")) {
+																			$nerd = $triples[$i]['o'];
+																			$link = $triples[$i]['s'];
+																			for ($j = 0, $j_max = count($alltriples); $j < $j_max; $j++)
+																			{
+																			if (stristr($triples1[$j]['s'] , $prefix ) && stristr($triples1[$j]['o'] , $link ))
+																				{
+																				$temp_triple = array("type"=>"triple", "s"=>$triples1[$j]['s'],  "p"=>$nerd, "o"=>$triples1[$j]['o'],  "s_type" => "uri", "p_type" => "uri", "o_type" => "uri", "o_datatype" => "", "o_lang"=>"");
+																				array_push($new_triples, $temp_triple);
+																				//print_r($temp_triple);
+																				}
+																			}
+																			
+																			}
+  //print_r($alltriples[$i]);
+  
+}
+$alltriples = array_merge($alltriples, $new_triples);
+
+$ser = ARC2::getTurtleSerializer($conf);
+$output = $ser->getSerializedTriples($alltriples);
+
+
+
+switch ($format) {
+    case 'rdfxml':
+        $ser = ARC2::getRDFXMLSerializer($conf);
+		$alltriples = array_merge($alltriples, $triples);
+		$output = $ser->getSerializedTriples($alltriples);
+        break;
+    case 'ntriples':
+        $parser = ARC2::getTurtleParser();
+		$parser->parse($prefix, $output);
+		$alltriples = array_merge($alltriples, $triples);
+		$output = $ser->getNTriplesSerializer($alltriples);
+		
+        break;
+	case 'turtle':
+        $parser = ARC2::getTurtleParser();
+        $parser->parse($prefix, $output);
+        $triples = $parser->getTriples();
+		$alltriples = array_merge($alltriples, $triples);
+        break;
+	case 'json':
+        $parser = ARC2::getJSONParser();
+		$parser->parse($prefix, $output);
+        $triples = $parser->getTriples();
+		$alltriples = array_merge($alltriples, $triples);
+        break;
+	default : 
+		$parser = ARC2::getTurtleParser();
+        $parser->parse($prefix, $output);
+        $triples = $parser->getTriples();
+		$alltriples = array_merge($alltriples, $triples);		
+}
+
+		
+/*for ($i = 0, $i_max = count($triples); $i < $i_max; $i++) 
+
+          print_r($triples[$i]);*/
+
+
+		  
+		  
+		  
 $dateiname = "output_calais.n3"; 
 $handler = fOpen($dateiname , "w+");
 fWrite($handler , $output);
 fClose($handler); 
+
 print $output;
 
 function getNerdList() {
 	$url = 'http://nerd.eurecom.fr/ui/ontology/nerd-last.n3';
-	$url = 'list.txt';
-	
 	$list = @file_get_contents( $url );
+	
+	//$list = file_get_contents( 'list.txt' );
+	/*
+	$prefix = "https://github.com/alexlust/NIFOpenCalais";
+	
+	$alltriples = array();
+	$parser = ARC2::getTurtleParser();
+    $parser->parse($prefix, $list);
+    $triples = $parser->getTriples();
+    $alltriples = array_merge($alltriples, $triples);
+	for ($i = 0, $i_max = count($alltriples); $i < $i_max; $i++) {
+	//if ($triples[$i]['p'] == "http://s.opencalais.com/1/pred/id") $triples[$i]['o_type'] = "uri";
+	print_r($alltriples[$i]);
+	}
+	*/
+	
 	
 	if ($list===false) die('unable to get nerd-list from '.$url);
 

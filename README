@@ -5,4 +5,4 @@ Requirements
     OpenCalais
     ARC2
 	
-Webservice: http://localhost/NIFOpenCalais/index.php?input-type=text&nif=true&prefix=&urirecipe=$urirecipe&input=
+Webservice: http://localhost/NIFOpenCalais/index.php?input-type=text&nif=true&prefix=&urirecipe=&format=&input=&context-length=

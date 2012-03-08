@@ -1,7 +1,7 @@
-@prefix nerd: <http://nerd.eurecom.fr/ontology#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix ns0: <http://s.opencalais.com/1/type/sys/> .
 @prefix ns1: <http://s.opencalais.com/1/pred/> .
+@prefix nerd: <http://nerd.eurecom.fr/ontology#> .
 @prefix ns2: <http://s.opencalais.com/1/type/em/e/> .
 @prefix ns3: <http://s.opencalais.com/1/type/lid/> .
 @prefix ns4: <http://s.opencalais.com/1/type/tag/> .
@@ -10,89 +10,95 @@
 @prefix ns7: <http://s.opencalais.com/1/type/er/> .
 @prefix ns8: <http://s.opencalais.com/1/type/er/Geo/> .
 
-<id:offset_858_867_President> rdf:type ns0:InstanceInfo ;
-                              ns1:detection "[suffered delays even as the death toll from ]President[ Felipe Calderon's crackdown on drug gangs surged]" ;
-                              ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                              ns1:exact "President" ;
-                              ns1:length "9" ;
-                              ns1:offset "858" ;
-                              ns1:prefix "suffered delays even as the death toll from " ;
-                              ns1:subject <http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e> ;
-                              ns1:suffix " Felipe Calderon's crackdown on drug gangs surged" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_9_91662c991fafbd9732a06a84f263b29e_President> rdf:type ns0:InstanceInfo ;
+                                                                                                 ns1:detection "[suffered delays even as the death toll from ]President[ Felipe Calderon's crackdown on drug gangs surged]" ;
+                                                                                                 ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                 ns1:exact "President" ;
+                                                                                                 ns1:length "9" ;
+                                                                                                 ns1:offset "858" ;
+                                                                                                 ns1:prefix "suffered delays even as the death toll from " ;
+                                                                                                 ns1:subject <http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e> ;
+                                                                                                 ns1:suffix " Felipe Calderon's crackdown on drug gangs surged" ;
+                                                                                                 nerd:Work <http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e> .
 
-<http://d.opencalais.com/pershash-1/debb49db-f74d-36c0-a7aa-c01a3a671af2> rdf:type ns2:Person, nerd:Person ;
+<http://d.opencalais.com/pershash-1/debb49db-f74d-36c0-a7aa-c01a3a671af2> rdf:type ns2:Person ,
+                                                                                   nerd:Person ;
                                                                           ns1:commonname "Felipe Calderon" ;
                                                                           ns1:name "Felipe Calderon" ;
                                                                           ns1:nationality "N/A" ;
                                                                           ns1:persontype "N/A" .
 
-<id:offset_698_707_Bloomberg> rdf:type ns0:InstanceInfo ;
-                              ns1:detection "[new cooperation plan, Espinosa, 52, said at ]Bloomberg['s offices in Mexico City. We now see that it's]" ;
-                              ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                              ns1:exact "Bloomberg" ;
-                              ns1:length "9" ;
-                              ns1:offset "698" ;
-                              ns1:prefix "new cooperation plan, Espinosa, 52, said at " ;
-                              ns1:subject <http://d.opencalais.com/comphash-1/edf6d19b-1098-30a9-bca6-241d2dfdc12b> ;
-                              ns1:suffix "'s offices in Mexico City. We now see that it's" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_9_eea1bbb00aff25694929f3c0592971bd_Bloomberg> rdf:type ns0:InstanceInfo ;
+                                                                                                 ns1:detection "[new cooperation plan, Espinosa, 52, said at ]Bloomberg['s offices in Mexico City. We now see that it's]" ;
+                                                                                                 ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                 ns1:exact "Bloomberg" ;
+                                                                                                 ns1:length "9" ;
+                                                                                                 ns1:offset "698" ;
+                                                                                                 ns1:prefix "new cooperation plan, Espinosa, 52, said at " ;
+                                                                                                 ns1:subject <http://d.opencalais.com/comphash-1/edf6d19b-1098-30a9-bca6-241d2dfdc12b> ;
+                                                                                                 ns1:suffix "'s offices in Mexico City. We now see that it's" ;
+                                                                                                 nerd:Organization <http://d.opencalais.com/comphash-1/edf6d19b-1098-30a9-bca6-241d2dfdc12b> .
 
-<id:offset_1621_1679_the%20U.S.%20Government%20Accountability%20Office%20said%20in%20a%20report> rdf:type ns0:InstanceInfo ;
-                                                                                                 ns1:detection """[agencies involved lacked staff and funding, ]the U.S. Government Accountability Office said in a report[ in 2010. 
+<https://github.com/alexlust/NIFOpenCalais#hash_10_58_eb70d08fff79c06660276be2d42af18f_the%20U.S.%20Government%20> rdf:type ns0:InstanceInfo ;
+                                                                                                                   ns1:detection """[agencies involved lacked staff and funding, ]the U.S. Government Accountability Office said in a report[ in 2010. 
 
 ]""" ;
-                                                                                                 ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                                                                                 ns1:exact "the U.S. Government Accountability Office said in a report" ;
-                                                                                                 ns1:length "58" ;
-                                                                                                 ns1:offset "1621" ;
-                                                                                                 ns1:prefix "agencies involved lacked staff and funding, " ;
-                                                                                                 ns1:subject <http://d.opencalais.com/genericHasher-1/9fcd663c-6cf5-3a62-b7f2-a8fe0612459a> ;
-                                                                                                 ns1:suffix """ in 2010. 
+                                                                                                                   ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                                   ns1:exact "the U.S. Government Accountability Office said in a report" ;
+                                                                                                                   ns1:length "58" ;
+                                                                                                                   ns1:offset "1621" ;
+                                                                                                                   ns1:prefix "agencies involved lacked staff and funding, " ;
+                                                                                                                   ns1:subject <http://d.opencalais.com/genericHasher-1/9fcd663c-6cf5-3a62-b7f2-a8fe0612459a> ;
+                                                                                                                   ns1:suffix """ in 2010. 
 
 """ .
 
-<id:offset_386_398_%24500%20million> rdf:type ns0:InstanceInfo ;
-                                     ns1:detection "[of State Hillary Clinton promised to disburse ]$500 million[ this year in equipment and aid for police]" ;
-                                     ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                     ns1:exact "$500 million" ;
-                                     ns1:length "12" ;
-                                     ns1:offset "386" ;
-                                     ns1:prefix "of State Hillary Clinton promised to disburse " ;
-                                     ns1:subject <http://d.opencalais.com/genericHasher-1/736a403d-157b-3e80-86a7-acc404607cb2> ;
-                                     ns1:suffix " this year in equipment and aid for police" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_12_6afbe56b0d0e77bc0910443c2129d96b_%24500%20million> rdf:type ns0:InstanceInfo ;
+                                                                                                         ns1:detection "[of State Hillary Clinton promised to disburse ]$500 million[ this year in equipment and aid for police]" ;
+                                                                                                         ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                         ns1:exact "$500 million" ;
+                                                                                                         ns1:length "12" ;
+                                                                                                         ns1:offset "386" ;
+                                                                                                         ns1:prefix "of State Hillary Clinton promised to disburse " ;
+                                                                                                         ns1:subject <http://d.opencalais.com/genericHasher-1/736a403d-157b-3e80-86a7-acc404607cb2> ;
+                                                                                                         ns1:suffix " this year in equipment and aid for police" ;
+                                                                                                         nerd:Currency <http://d.opencalais.com/genericHasher-1/736a403d-157b-3e80-86a7-acc404607cb2> .
 
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/Relevance/1> rdf:type ns0:RelevanceInfo ;
                                                                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
                                                                                      ns1:relevance "0.580" ;
                                                                                      ns1:subject <http://d.opencalais.com/pershash-1/265e3723-de86-3484-bfdd-655f5f4c3beb> .
 
-<id:offset_226_243_Patricia%20Espinosa> rdf:type ns0:InstanceInfo ;
-                                        ns1:detection """[ delays in recent years, Foreign Affairs Minister ]Patricia Espinosa[ said.
+<https://github.com/alexlust/NIFOpenCalais#hash_10_17_e2ca1da088c723c1b9d6a136a4f2c0bd_Patricia%20Espinosa> rdf:type ns0:InstanceInfo ;
+                                                                                                            ns1:detection """[ delays in recent years, Foreign Affairs Minister ]Patricia Espinosa[ said.
 
 Espinosa, in an interview yesterday, said]""" ;
-                                        ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                        ns1:exact "Patricia Espinosa" ;
-                                        ns1:length "17" ;
-                                        ns1:offset "226" ;
-                                        ns1:prefix " delays in recent years, Foreign Affairs Minister " ;
-                                        ns1:subject <http://d.opencalais.com/pershash-1/265e3723-de86-3484-bfdd-655f5f4c3beb> ;
-                                        ns1:suffix """ said.
+                                                                                                            ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                            ns1:exact "Patricia Espinosa" ;
+                                                                                                            ns1:length "17" ;
+                                                                                                            ns1:offset "226" ;
+                                                                                                            ns1:prefix " delays in recent years, Foreign Affairs Minister " ;
+                                                                                                            ns1:subject <http://d.opencalais.com/pershash-1/265e3723-de86-3484-bfdd-655f5f4c3beb> ;
+                                                                                                            ns1:suffix """ said.
 
-Espinosa, in an interview yesterday, said""" .
+Espinosa, in an interview yesterday, said""" ;
+                                                                                                            nerd:Person <http://d.opencalais.com/pershash-1/265e3723-de86-3484-bfdd-655f5f4c3beb> .
 
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/Relevance/8> rdf:type ns0:RelevanceInfo ;
                                                                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
                                                                                      ns1:relevance "0.316" ;
                                                                                      ns1:subject <http://d.opencalais.com/pershash-1/b8148a41-c46e-3f4c-b8d6-d8b368a05c88> .
 
-<id:offset_494_500_Mexico> rdf:type ns0:InstanceInfo ;
-                           ns1:detection "[as part of the bilateral Merida Initiative. ]Mexico[ expects to receive complete financing of the]" ;
-                           ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                           ns1:exact "Mexico" ;
-                           ns1:length "6" ;
-                           ns1:offset "494" ;
-                           ns1:prefix "as part of the bilateral Merida Initiative. " ;
-                           ns1:subject <http://d.opencalais.com/genericHasher-1/92956dc3-4c11-340f-b4b5-1266cd1c7c5c> ;
-                           ns1:suffix " expects to receive complete financing of the" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_6_51df734bfb38f22165983fbee612639d_Mexico> rdf:type ns0:InstanceInfo ;
+                                                                                              ns1:detection "[as part of the bilateral Merida Initiative. ]Mexico[ expects to receive complete financing of the]" ;
+                                                                                              ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                              ns1:exact "Mexico" ;
+                                                                                              ns1:length "6" ;
+                                                                                              ns1:offset "494" ;
+                                                                                              ns1:prefix "as part of the bilateral Merida Initiative. " ;
+                                                                                              ns1:subject <http://d.opencalais.com/genericHasher-1/92956dc3-4c11-340f-b4b5-1266cd1c7c5c> ;
+                                                                                              ns1:suffix " expects to receive complete financing of the" ;
+                                                                                              nerd:PopulatedPlace <http://d.opencalais.com/genericHasher-1/92956dc3-4c11-340f-b4b5-1266cd1c7c5c> .
 
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/lid/DefaultLangId> rdf:type ns3:DefaultLangId ;
                                                                                            ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
@@ -101,142 +107,153 @@ Espinosa, in an interview yesterday, said""" .
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/SocialTag/4> rdf:type ns4:SocialTag ;
                                                                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
                                                                                      ns1:importance "2" ;
-                                                                                     ns1:name "Military of Mexico" ;
-                                                                                     ns1:originalValue "Military of Mexico" ;
-                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/8251fd4d-37ef-3761-88ef-18c18b0efc09> .
+                                                                                     ns1:name "Crime in Mexico" ;
+                                                                                     ns1:originalValue "Crime in Mexico" ;
+                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/2eb3ae2d-7c4d-3c8d-bb79-29da0d7f2a7a> .
 
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/Relevance/12> rdf:type ns0:RelevanceInfo ;
                                                                                       ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
                                                                                       ns1:relevance "0.613" ;
                                                                                       ns1:subject <http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e> .
 
-<id:offset_1069_1077_Calderon> rdf:type ns0:InstanceInfo ;
-                               ns1:detection "[ under the program since it was signed in 2008 by ]Calderon[ and former President George W. Bush, with $380]" ;
-                               ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                               ns1:exact "Calderon" ;
-                               ns1:length "8" ;
-                               ns1:offset "1069" ;
-                               ns1:prefix " under the program since it was signed in 2008 by " ;
-                               ns1:subject <http://d.opencalais.com/pershash-1/debb49db-f74d-36c0-a7aa-c01a3a671af2> ;
-                               ns1:suffix " and former President George W. Bush, with $380" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_8_24fa91b4c1bd4def972a106b98b9737a_Calderon> rdf:type ns0:InstanceInfo ;
+                                                                                                ns1:detection "[ under the program since it was signed in 2008 by ]Calderon[ and former President George W. Bush, with $380]" ;
+                                                                                                ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                ns1:exact "Calderon" ;
+                                                                                                ns1:length "8" ;
+                                                                                                ns1:offset "1069" ;
+                                                                                                ns1:prefix " under the program since it was signed in 2008 by " ;
+                                                                                                ns1:subject <http://d.opencalais.com/pershash-1/debb49db-f74d-36c0-a7aa-c01a3a671af2> ;
+                                                                                                ns1:suffix " and former President George W. Bush, with $380" ;
+                                                                                                nerd:Person <http://d.opencalais.com/pershash-1/debb49db-f74d-36c0-a7aa-c01a3a671af2> .
 
-<id:offset_1089_1098_President> rdf:type ns0:InstanceInfo ;
-                                ns1:detection "[it was signed in 2008 by Calderon and former ]President[ George W. Bush, with $380 million arriving]" ;
-                                ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                ns1:exact "President" ;
-                                ns1:length "9" ;
-                                ns1:offset "1089" ;
-                                ns1:prefix "it was signed in 2008 by Calderon and former " ;
-                                ns1:subject <http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e> ;
-                                ns1:suffix " George W. Bush, with $380 million arriving" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_9_c1d323c80009644c6087239c420be6b2_President> rdf:type ns0:InstanceInfo ;
+                                                                                                 ns1:detection "[it was signed in 2008 by Calderon and former ]President[ George W. Bush, with $380 million arriving]" ;
+                                                                                                 ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                 ns1:exact "President" ;
+                                                                                                 ns1:length "9" ;
+                                                                                                 ns1:offset "1089" ;
+                                                                                                 ns1:prefix "it was signed in 2008 by Calderon and former " ;
+                                                                                                 ns1:subject <http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e> ;
+                                                                                                 ns1:suffix " George W. Bush, with $380 million arriving" ;
+                                                                                                 nerd:Work <http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e> .
 
-<http://d.opencalais.com/genericHasher-1/09a06b6e-3bdc-3d17-82aa-e393a60f97b7> rdf:type ns2:Position, nerd:Work ;
+<http://d.opencalais.com/genericHasher-1/09a06b6e-3bdc-3d17-82aa-e393a60f97b7> rdf:type ns2:Position ,
+                                                                                        nerd:Work ;
                                                                                ns1:name "Foreign Affairs Minister" .
 
-<id:offset_129_141_%241.4%20billion> rdf:type ns0:InstanceInfo ;
-                                     ns1:detection "[ fight against drug gangs and put back on track a ]$1.4 billion[ program that has been hamstrung by delays in]" ;
-                                     ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                     ns1:exact "$1.4 billion" ;
-                                     ns1:length "12" ;
-                                     ns1:offset "129" ;
-                                     ns1:prefix " fight against drug gangs and put back on track a " ;
-                                     ns1:subject <http://d.opencalais.com/genericHasher-1/736a403d-157b-3e80-86a7-acc404607cb2> ;
-                                     ns1:suffix " program that has been hamstrung by delays in" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_12_3ccd9577a964e3eaa384059951e5e1c7_%241.4%20billion> rdf:type ns0:InstanceInfo ;
+                                                                                                         ns1:detection "[ fight against drug gangs and put back on track a ]$1.4 billion[ program that has been hamstrung by delays in]" ;
+                                                                                                         ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                         ns1:exact "$1.4 billion" ;
+                                                                                                         ns1:length "12" ;
+                                                                                                         ns1:offset "129" ;
+                                                                                                         ns1:prefix " fight against drug gangs and put back on track a " ;
+                                                                                                         ns1:subject <http://d.opencalais.com/genericHasher-1/736a403d-157b-3e80-86a7-acc404607cb2> ;
+                                                                                                         ns1:suffix " program that has been hamstrung by delays in" ;
+                                                                                                         nerd:Currency <http://d.opencalais.com/genericHasher-1/736a403d-157b-3e80-86a7-acc404607cb2> .
 
-<id:offset_201_225_Foreign%20Affairs%20Minister> rdf:type ns0:InstanceInfo ;
-                                                 ns1:detection """[has been hamstrung by delays in recent years, ]Foreign Affairs Minister[ Patricia Espinosa said.
+<https://github.com/alexlust/NIFOpenCalais#hash_10_24_e856c09f51044ac3101803257be08c0e_Foreign%20Affairs%20Mini> rdf:type ns0:InstanceInfo ;
+                                                                                                                 ns1:detection """[has been hamstrung by delays in recent years, ]Foreign Affairs Minister[ Patricia Espinosa said.
 
 Espinosa, in an]""" ;
-                                                 ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                                 ns1:exact "Foreign Affairs Minister" ;
-                                                 ns1:length "24" ;
-                                                 ns1:offset "201" ;
-                                                 ns1:prefix "has been hamstrung by delays in recent years, " ;
-                                                 ns1:subject <http://d.opencalais.com/genericHasher-1/09a06b6e-3bdc-3d17-82aa-e393a60f97b7> ;
-                                                 ns1:suffix """ Patricia Espinosa said.
+                                                                                                                 ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                                 ns1:exact "Foreign Affairs Minister" ;
+                                                                                                                 ns1:length "24" ;
+                                                                                                                 ns1:offset "201" ;
+                                                                                                                 ns1:prefix "has been hamstrung by delays in recent years, " ;
+                                                                                                                 ns1:subject <http://d.opencalais.com/genericHasher-1/09a06b6e-3bdc-3d17-82aa-e393a60f97b7> ;
+                                                                                                                 ns1:suffix """ Patricia Espinosa said.
 
-Espinosa, in an""" .
+Espinosa, in an""" ;
+                                                                                                                 nerd:Work <http://d.opencalais.com/genericHasher-1/09a06b6e-3bdc-3d17-82aa-e393a60f97b7> .
 
-<id:offset_590_733_We%20got%20off%20to%20a%20slow%20start%20in%20part%20because%20this%20is%20a%20completely%20new%20cooperation%20plan%2C%20Espinosa%2C%2052%2C%20said%20at%20Bloomberg%27s%20offices%20in%20Mexico%20City.> rdf:type ns0:InstanceInfo ;
-                                                                                                                                                                                                                              ns1:detection """[the multi-year program by next year, she said.
+<https://github.com/alexlust/NIFOpenCalais#hash_10_143_7132b23cec051a6923cb295311635bbe_We%20got%20off%20to%20a%20slow> rdf:type ns0:InstanceInfo ;
+                                                                                                                        ns1:detection """[the multi-year program by next year, she said.
 
 ]We got off to a slow start in part because this is a completely new cooperation plan, Espinosa, 52, said at Bloomberg's offices in Mexico City.[ We now see that it's advancing more]""" ;
-                                                                                                                                                                                                                              ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                                                                                                                                                                                                              ns1:exact "We got off to a slow start in part because this is a completely new cooperation plan, Espinosa, 52, said at Bloomberg's offices in Mexico City." ;
-                                                                                                                                                                                                                              ns1:length "143" ;
-                                                                                                                                                                                                                              ns1:offset "590" ;
-                                                                                                                                                                                                                              ns1:prefix """the multi-year program by next year, she said.
+                                                                                                                        ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                                        ns1:exact "We got off to a slow start in part because this is a completely new cooperation plan, Espinosa, 52, said at Bloomberg's offices in Mexico City." ;
+                                                                                                                        ns1:length "143" ;
+                                                                                                                        ns1:offset "590" ;
+                                                                                                                        ns1:prefix """the multi-year program by next year, she said.
 
 """ ;
-                                                                                                                                                                                                                              ns1:subject <http://d.opencalais.com/genericHasher-1/5efb380f-17c0-3343-b47e-05c4fcd7b8b8> ;
-                                                                                                                                                                                                                              ns1:suffix " We now see that it's advancing more" .
+                                                                                                                        ns1:subject <http://d.opencalais.com/genericHasher-1/5efb380f-17c0-3343-b47e-05c4fcd7b8b8> ;
+                                                                                                                        ns1:suffix " We now see that it's advancing more" .
 
 <http://d.opencalais.com/genericHasher-1/f114457a-8c73-3358-b3f3-2ba367b7c376> rdf:type ns5:GenericRelations ;
                                                                                ns1:relationobject "both U.S. President Barack Obama and Secretary of State Hillary Clinton promised to disburse $500 million this year in equipment and aid for police training as part of the bilateral Merida Initiative" ;
                                                                                ns1:relationsubject <http://d.opencalais.com/pershash-1/265e3723-de86-3484-bfdd-655f5f4c3beb> ;
                                                                                ns1:verb "say" .
 
-<id:offset_251_259_Espinosa> rdf:type ns0:InstanceInfo ;
-                             ns1:detection """[Affairs Minister Patricia Espinosa said.
+<https://github.com/alexlust/NIFOpenCalais#hash_10_8_4af4608d92714c1b97d9ef0b682f2d5a_Espinosa> rdf:type ns0:InstanceInfo ;
+                                                                                                ns1:detection """[Affairs Minister Patricia Espinosa said.
 
 ]Espinosa[, in an interview yesterday, said both U.S.]""" ;
-                             ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                             ns1:exact "Espinosa" ;
-                             ns1:length "8" ;
-                             ns1:offset "251" ;
-                             ns1:prefix """Affairs Minister Patricia Espinosa said.
+                                                                                                ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                ns1:exact "Espinosa" ;
+                                                                                                ns1:length "8" ;
+                                                                                                ns1:offset "251" ;
+                                                                                                ns1:prefix """Affairs Minister Patricia Espinosa said.
 
 """ ;
-                             ns1:subject <http://d.opencalais.com/pershash-1/265e3723-de86-3484-bfdd-655f5f4c3beb> ;
-                             ns1:suffix ", in an interview yesterday, said both U.S." .
+                                                                                                ns1:subject <http://d.opencalais.com/pershash-1/265e3723-de86-3484-bfdd-655f5f4c3beb> ;
+                                                                                                ns1:suffix ", in an interview yesterday, said both U.S." ;
+                                                                                                nerd:Person <http://d.opencalais.com/pershash-1/265e3723-de86-3484-bfdd-655f5f4c3beb> .
 
-<id:offset_19_23_U.S.> rdf:type ns0:InstanceInfo ;
-                       ns1:detection "[Mexico expects the ]U.S.[ to accelerate the disbursement of aid to]" ;
-                       ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                       ns1:exact "U.S." ;
-                       ns1:length "4" ;
-                       ns1:offset "19" ;
-                       ns1:prefix "Mexico expects the " ;
-                       ns1:subject <http://d.opencalais.com/genericHasher-1/a54ac18b-a956-3b5c-b235-0609ca899305> ;
-                       ns1:suffix " to accelerate the disbursement of aid to" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_4_a9cf91dcdfb0c49c3741bc703f44a26d_U.S.> rdf:type ns0:InstanceInfo ;
+                                                                                            ns1:detection "[Mexico expects the ]U.S.[ to accelerate the disbursement of aid to]" ;
+                                                                                            ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                            ns1:exact "U.S." ;
+                                                                                            ns1:length "4" ;
+                                                                                            ns1:offset "19" ;
+                                                                                            ns1:prefix "Mexico expects the " ;
+                                                                                            ns1:subject <http://d.opencalais.com/genericHasher-1/a54ac18b-a956-3b5c-b235-0609ca899305> ;
+                                                                                            ns1:suffix " to accelerate the disbursement of aid to" ;
+                                                                                            nerd:PopulatedPlace <http://d.opencalais.com/genericHasher-1/a54ac18b-a956-3b5c-b235-0609ca899305> .
 
-<http://d.opencalais.com/genericHasher-1/736a403d-157b-3e80-86a7-acc404607cb2> rdf:type ns2:Currency, nerd:Currency ;
+<http://d.opencalais.com/genericHasher-1/736a403d-157b-3e80-86a7-acc404607cb2> rdf:type ns2:Currency ,
+                                                                                        nerd:Currency ;
                                                                                ns1:name "USD" .
 
 <http://d.opencalais.com/genericHasher-1/2a6cb60c-d693-35cb-ab31-c4a66ebc97d2> rdf:type ns5:Quotation ;
                                                                                ns1:person <http://d.opencalais.com/pershash-1/265e3723-de86-3484-bfdd-655f5f4c3beb> ;
                                                                                ns1:quote "Mexico expects to receive complete financing of the multi-year program by next year" .
 
-<id:offset_807_813_Mexico> rdf:type ns0:InstanceInfo ;
-                           ns1:detection """[more quickly.
+<https://github.com/alexlust/NIFOpenCalais#hash_10_6_036fa0d9f139c4b7d555145ff01bbaaa_Mexico> rdf:type ns0:InstanceInfo ;
+                                                                                              ns1:detection """[more quickly.
 
 U.S. anti-narcotics aid to ]Mexico[ suffered delays even as the death toll from]""" ;
-                           ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                           ns1:exact "Mexico" ;
-                           ns1:length "6" ;
-                           ns1:offset "807" ;
-                           ns1:prefix """more quickly.
+                                                                                              ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                              ns1:exact "Mexico" ;
+                                                                                              ns1:length "6" ;
+                                                                                              ns1:offset "807" ;
+                                                                                              ns1:prefix """more quickly.
 
 U.S. anti-narcotics aid to """ ;
-                           ns1:subject <http://d.opencalais.com/genericHasher-1/92956dc3-4c11-340f-b4b5-1266cd1c7c5c> ;
-                           ns1:suffix " suffered delays even as the death toll from" .
+                                                                                              ns1:subject <http://d.opencalais.com/genericHasher-1/92956dc3-4c11-340f-b4b5-1266cd1c7c5c> ;
+                                                                                              ns1:suffix " suffered delays even as the death toll from" ;
+                                                                                              nerd:PopulatedPlace <http://d.opencalais.com/genericHasher-1/92956dc3-4c11-340f-b4b5-1266cd1c7c5c> .
 
-<id:offset_298_302_U.S.> rdf:type ns0:InstanceInfo ;
-                         ns1:detection "[in an interview yesterday, said both ]U.S.[ President Barack Obama and Secretary of State]" ;
-                         ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                         ns1:exact "U.S." ;
-                         ns1:length "4" ;
-                         ns1:offset "298" ;
-                         ns1:prefix "in an interview yesterday, said both " ;
-                         ns1:subject <http://d.opencalais.com/genericHasher-1/a54ac18b-a956-3b5c-b235-0609ca899305> ;
-                         ns1:suffix " President Barack Obama and Secretary of State" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_4_7feb84ee5471928075ce625ee0be53f6_U.S.> rdf:type ns0:InstanceInfo ;
+                                                                                            ns1:detection "[in an interview yesterday, said both ]U.S.[ President Barack Obama and Secretary of State]" ;
+                                                                                            ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                            ns1:exact "U.S." ;
+                                                                                            ns1:length "4" ;
+                                                                                            ns1:offset "298" ;
+                                                                                            ns1:prefix "in an interview yesterday, said both " ;
+                                                                                            ns1:subject <http://d.opencalais.com/genericHasher-1/a54ac18b-a956-3b5c-b235-0609ca899305> ;
+                                                                                            ns1:suffix " President Barack Obama and Secretary of State" ;
+                                                                                            nerd:PopulatedPlace <http://d.opencalais.com/genericHasher-1/a54ac18b-a956-3b5c-b235-0609ca899305> .
 
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/Relevance/9> rdf:type ns0:RelevanceInfo ;
                                                                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
                                                                                      ns1:relevance "0.325" ;
                                                                                      ns1:subject <http://d.opencalais.com/genericHasher-1/09a06b6e-3bdc-3d17-82aa-e393a60f97b7> .
 
-<http://d.opencalais.com/genericHasher-1/92956dc3-4c11-340f-b4b5-1266cd1c7c5c> rdf:type ns2:Country, nerd:PopulatedPlace ;
+<http://d.opencalais.com/genericHasher-1/92956dc3-4c11-340f-b4b5-1266cd1c7c5c> rdf:type ns2:Country ,
+                                                                                        nerd:PopulatedPlace ;
                                                                                ns1:name "Mexico" .
 
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/Relevance/11> rdf:type ns0:RelevanceInfo ;
@@ -254,29 +271,30 @@ U.S. anti-narcotics aid to """ ;
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/SocialTag/5> rdf:type ns4:SocialTag ;
                                                                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
                                                                                      ns1:importance "2" ;
-                                                                                     ns1:name "Mérida Initiative" ;
-                                                                                     ns1:originalValue "Mérida Initiative" ;
-                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/360fd3e0-0535-3693-ad0e-fd599f37da49> .
+                                                                                     ns1:name "Drug control law" ;
+                                                                                     ns1:originalValue "Drug control law" ;
+                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/abde3d03-c974-3757-a7ff-d651e6736335> .
 
-<id:offset_868_883_Felipe%20Calderon> rdf:type ns0:InstanceInfo ;
-                                      ns1:detection "[delays even as the death toll from President ]Felipe Calderon['s crackdown on drug gangs surged to over 35,000]" ;
-                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                      ns1:exact "Felipe Calderon" ;
-                                      ns1:length "15" ;
-                                      ns1:offset "868" ;
-                                      ns1:prefix "delays even as the death toll from President " ;
-                                      ns1:subject <http://d.opencalais.com/pershash-1/debb49db-f74d-36c0-a7aa-c01a3a671af2> ;
-                                      ns1:suffix "'s crackdown on drug gangs surged to over 35,000" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_15_d6b6f09b91b556348991758f69ae7be5_Felipe%20Calderon> rdf:type ns0:InstanceInfo ;
+                                                                                                          ns1:detection "[delays even as the death toll from President ]Felipe Calderon['s crackdown on drug gangs surged to over 35,000]" ;
+                                                                                                          ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                          ns1:exact "Felipe Calderon" ;
+                                                                                                          ns1:length "15" ;
+                                                                                                          ns1:offset "868" ;
+                                                                                                          ns1:prefix "delays even as the death toll from President " ;
+                                                                                                          ns1:subject <http://d.opencalais.com/pershash-1/debb49db-f74d-36c0-a7aa-c01a3a671af2> ;
+                                                                                                          ns1:suffix "'s crackdown on drug gangs surged to over 35,000" ;
+                                                                                                          nerd:Person <http://d.opencalais.com/pershash-1/debb49db-f74d-36c0-a7aa-c01a3a671af2> .
 
-<id:offset_330_364_Secretary%20of%20State%20Hillary%20Clinton> rdf:type ns0:InstanceInfo ;
-                                                               ns1:detection "[said both U.S. President Barack Obama and ]Secretary of State Hillary Clinton[ promised to disburse $500 million this year in]" ;
-                                                               ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                                               ns1:exact "Secretary of State Hillary Clinton" ;
-                                                               ns1:length "34" ;
-                                                               ns1:offset "330" ;
-                                                               ns1:prefix "said both U.S. President Barack Obama and " ;
-                                                               ns1:subject <http://d.opencalais.com/genericHasher-1/57348b5b-e93c-356a-9558-f8de0b12d9ac> ;
-                                                               ns1:suffix " promised to disburse $500 million this year in" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_34_a8c47289655a6da992d22d6e9e6b4d4f_Secretary%20of%20State%20H> rdf:type ns0:InstanceInfo ;
+                                                                                                                   ns1:detection "[said both U.S. President Barack Obama and ]Secretary of State Hillary Clinton[ promised to disburse $500 million this year in]" ;
+                                                                                                                   ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                                   ns1:exact "Secretary of State Hillary Clinton" ;
+                                                                                                                   ns1:length "34" ;
+                                                                                                                   ns1:offset "330" ;
+                                                                                                                   ns1:prefix "said both U.S. President Barack Obama and " ;
+                                                                                                                   ns1:subject <http://d.opencalais.com/genericHasher-1/57348b5b-e93c-356a-9558-f8de0b12d9ac> ;
+                                                                                                                   ns1:suffix " promised to disburse $500 million this year in" .
 
 <http://d.opencalais.com/genericHasher-1/ccc90056-76eb-3155-9c07-094914e265cc> rdf:type ns5:PersonCareer ;
                                                                                ns1:careertype "political" ;
@@ -292,52 +310,55 @@ U.S. anti-narcotics aid to """ ;
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/SocialTag/10> rdf:type ns4:SocialTag ;
                                                                                       ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
                                                                                       ns1:importance "2" ;
-                                                                                      ns1:name "Mexico" ;
-                                                                                      ns1:originalValue "Mexico" ;
-                                                                                      ns1:socialtag <http://d.opencalais.com/genericHasher-1/3e30aa82-5812-3639-ad43-762891af3a64> .
+                                                                                      ns1:name "Patricia Espinosa" ;
+                                                                                      ns1:originalValue "Patricia Espinosa" ;
+                                                                                      ns1:socialtag <http://d.opencalais.com/genericHasher-1/d756de1b-825a-30b1-bb2e-a4e279577876> .
 
-<id:offset_721_732_Mexico%20City> rdf:type ns0:InstanceInfo ;
-                                  ns1:detection "[Espinosa, 52, said at Bloomberg's offices in ]Mexico City[. We now see that it's advancing more]" ;
-                                  ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                  ns1:exact "Mexico City" ;
-                                  ns1:length "11" ;
-                                  ns1:offset "721" ;
-                                  ns1:prefix "Espinosa, 52, said at Bloomberg's offices in " ;
-                                  ns1:subject <http://d.opencalais.com/genericHasher-1/aff31fe5-a3c4-3842-9e42-f60f0dd8fa2b> ;
-                                  ns1:suffix ". We now see that it's advancing more" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_11_561a8e6e1f27ca82032beca6aa4782aa_Mexico%20City> rdf:type ns0:InstanceInfo ;
+                                                                                                      ns1:detection "[Espinosa, 52, said at Bloomberg's offices in ]Mexico City[. We now see that it's advancing more]" ;
+                                                                                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                      ns1:exact "Mexico City" ;
+                                                                                                      ns1:length "11" ;
+                                                                                                      ns1:offset "721" ;
+                                                                                                      ns1:prefix "Espinosa, 52, said at Bloomberg's offices in " ;
+                                                                                                      ns1:subject <http://d.opencalais.com/genericHasher-1/aff31fe5-a3c4-3842-9e42-f60f0dd8fa2b> ;
+                                                                                                      ns1:suffix ". We now see that it's advancing more" ;
+                                                                                                      nerd:Municipality <http://d.opencalais.com/genericHasher-1/aff31fe5-a3c4-3842-9e42-f60f0dd8fa2b> .
 
-<http://d.opencalais.com/genericHasher-1/f1d77aa8-f9b9-3ad1-b6a3-2d516d2d31c6> rdf:type ns2:Position, nerd:Work ;
+<http://d.opencalais.com/genericHasher-1/f1d77aa8-f9b9-3ad1-b6a3-2d516d2d31c6> rdf:type ns2:Position ,
+                                                                                        nerd:Work ;
                                                                                ns1:name "Secretary of State" .
 
-<id:offset_298_325_U.S.%20President%20Barack%20Obama> rdf:type ns0:InstanceInfo ;
-                                                      ns1:detection "[in an interview yesterday, said both ]U.S. President Barack Obama[ and Secretary of State Hillary Clinton promised]" ;
-                                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                                      ns1:exact "U.S. President Barack Obama" ;
-                                                      ns1:length "27" ;
-                                                      ns1:offset "298" ;
-                                                      ns1:prefix "in an interview yesterday, said both " ;
-                                                      ns1:subject <http://d.opencalais.com/genericHasher-1/ccc90056-76eb-3155-9c07-094914e265cc> ;
-                                                      ns1:suffix " and Secretary of State Hillary Clinton promised" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_27_974cd6cb80b0d5bdab1e3c7e0ef353b8_U.S.%20President%20Barac> rdf:type ns0:InstanceInfo ;
+                                                                                                                 ns1:detection "[in an interview yesterday, said both ]U.S. President Barack Obama[ and Secretary of State Hillary Clinton promised]" ;
+                                                                                                                 ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                                 ns1:exact "U.S. President Barack Obama" ;
+                                                                                                                 ns1:length "27" ;
+                                                                                                                 ns1:offset "298" ;
+                                                                                                                 ns1:prefix "in an interview yesterday, said both " ;
+                                                                                                                 ns1:subject <http://d.opencalais.com/genericHasher-1/ccc90056-76eb-3155-9c07-094914e265cc> ;
+                                                                                                                 ns1:suffix " and Secretary of State Hillary Clinton promised" .
 
-<id:offset_780_784_U.S.> rdf:type ns0:InstanceInfo ;
-                         ns1:detection """[We now see that it's advancing more quickly.
+<https://github.com/alexlust/NIFOpenCalais#hash_10_4_fd2f94a76c55cf76d372ae8a47ea1ddc_U.S.> rdf:type ns0:InstanceInfo ;
+                                                                                            ns1:detection """[We now see that it's advancing more quickly.
 
 ]U.S.[ anti-narcotics aid to Mexico suffered delays]""" ;
-                         ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                         ns1:exact "U.S." ;
-                         ns1:length "4" ;
-                         ns1:offset "780" ;
-                         ns1:prefix """We now see that it's advancing more quickly.
+                                                                                            ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                            ns1:exact "U.S." ;
+                                                                                            ns1:length "4" ;
+                                                                                            ns1:offset "780" ;
+                                                                                            ns1:prefix """We now see that it's advancing more quickly.
 
 """ ;
-                         ns1:subject <http://d.opencalais.com/genericHasher-1/a54ac18b-a956-3b5c-b235-0609ca899305> ;
-                         ns1:suffix " anti-narcotics aid to Mexico suffered delays" .
+                                                                                            ns1:subject <http://d.opencalais.com/genericHasher-1/a54ac18b-a956-3b5c-b235-0609ca899305> ;
+                                                                                            ns1:suffix " anti-narcotics aid to Mexico suffered delays" ;
+                                                                                            nerd:PopulatedPlace <http://d.opencalais.com/genericHasher-1/a54ac18b-a956-3b5c-b235-0609ca899305> .
 
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> rdf:type ns0:DocInfo ;
                                                                          ns1:allowDistribution "true" ;
                                                                          ns1:allowSearch "true" ;
-                                                                         ns1:calaisRequestID "13dff855-cd58-d8d1-1351-bc809897f996" ;
-                                                                         ns1:docDate "2012-01-26 15:49:49.405" ;
+                                                                         ns1:calaisRequestID "4fef6a7a-aa7f-3a8b-135f-1d5026455bb6" ;
+                                                                         ns1:docDate "2012-03-08 04:22:43.784" ;
                                                                          ns1:docRDFaccessible "true" ;
                                                                          ns1:docTitle "" ;
                                                                          ns1:document """Mexico expects the U.S. to accelerate the disbursement of aid to strengthen its fight against drug gangs and put back on track a $1.4 billion program that has been hamstrung by delays in recent years, Foreign Affairs Minister Patricia Espinosa said.
@@ -354,7 +375,7 @@ Until a year ago the U.S. had delivered only about 9 percent of the promised aid
 
 """ ;
                                                                          ns1:externalMetadata "" ;
-                                                                         ns1:id "http://id.opencalais.com/YUJlkw*NHjs2uT8mgN4jag" .
+                                                                         ns1:id <http://id.opencalais.com/YUJlkw*NHjs2uT8mgN4jag> .
 
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/Relevance/6> rdf:type ns0:RelevanceInfo ;
                                                                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
@@ -364,16 +385,16 @@ Until a year ago the U.S. had delivered only about 9 percent of the promised aid
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/SocialTag/2> rdf:type ns4:SocialTag ;
                                                                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
                                                                                      ns1:importance "1" ;
-                                                                                     ns1:name "Drug control law" ;
-                                                                                     ns1:originalValue "Drug control law" ;
-                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/abde3d03-c974-3757-a7ff-d651e6736335> .
+                                                                                     ns1:name "Government" ;
+                                                                                     ns1:originalValue "Government" ;
+                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/91e63013-b123-333b-8ba4-71c94ebbf648> .
 
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/SocialTag/1> rdf:type ns4:SocialTag ;
                                                                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
                                                                                      ns1:importance "1" ;
-                                                                                     ns1:name "Crime in Mexico" ;
-                                                                                     ns1:originalValue "Crime in Mexico" ;
-                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/2eb3ae2d-7c4d-3c8d-bb79-29da0d7f2a7a> .
+                                                                                     ns1:name "Mexico" ;
+                                                                                     ns1:originalValue "Mexico" ;
+                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/3e30aa82-5812-3639-ad43-762891af3a64> .
 
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/Relevance/10> rdf:type ns0:RelevanceInfo ;
                                                                                       ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
@@ -387,15 +408,16 @@ Until a year ago the U.S. had delivered only about 9 percent of the promised aid
                                                                                ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
                                                                                ns1:score "0.725" .
 
-<id:offset_303_312_President> rdf:type ns0:InstanceInfo ;
-                              ns1:detection "[in an interview yesterday, said both U.S. ]President[ Barack Obama and Secretary of State Hillary]" ;
-                              ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                              ns1:exact "President" ;
-                              ns1:length "9" ;
-                              ns1:offset "303" ;
-                              ns1:prefix "in an interview yesterday, said both U.S. " ;
-                              ns1:subject <http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e> ;
-                              ns1:suffix " Barack Obama and Secretary of State Hillary" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_9_6521351696cd5a3bad0ee209b4d3c81b_President> rdf:type ns0:InstanceInfo ;
+                                                                                                 ns1:detection "[in an interview yesterday, said both U.S. ]President[ Barack Obama and Secretary of State Hillary]" ;
+                                                                                                 ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                 ns1:exact "President" ;
+                                                                                                 ns1:length "9" ;
+                                                                                                 ns1:offset "303" ;
+                                                                                                 ns1:prefix "in an interview yesterday, said both U.S. " ;
+                                                                                                 ns1:subject <http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e> ;
+                                                                                                 ns1:suffix " Barack Obama and Secretary of State Hillary" ;
+                                                                                                 nerd:Work <http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e> .
 
 <http://d.opencalais.com/genericHasher-1/06588553-f9c2-3480-a001-244f628bdbbe> rdf:type ns5:PersonCareer ;
                                                                                ns1:careertype "political" ;
@@ -403,44 +425,47 @@ Until a year ago the U.S. had delivered only about 9 percent of the promised aid
                                                                                ns1:position <http://d.opencalais.com/genericHasher-1/09a06b6e-3bdc-3d17-82aa-e393a60f97b7> ;
                                                                                ns1:status "current" .
 
-<id:offset_1625_1662_U.S.%20Government%20Accountability%20Office> rdf:type ns0:InstanceInfo ;
-                                                                  ns1:detection "[agencies involved lacked staff and funding, the ]U.S. Government Accountability Office[ said in a report in 2010.]" ;
-                                                                  ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                                                  ns1:exact "U.S. Government Accountability Office" ;
-                                                                  ns1:length "37" ;
-                                                                  ns1:offset "1625" ;
-                                                                  ns1:prefix "agencies involved lacked staff and funding, the " ;
-                                                                  ns1:subject <http://d.opencalais.com/genericHasher-1/f8d5c96e-3d94-3636-a6bb-d86790b1bde1> ;
-                                                                  ns1:suffix " said in a report in 2010." .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_37_a8c713e5219c4cf37a32614c6afc12c3_U.S.%20Government%20Acco> rdf:type ns0:InstanceInfo ;
+                                                                                                                 ns1:detection "[agencies involved lacked staff and funding, the ]U.S. Government Accountability Office[ said in a report in 2010.]" ;
+                                                                                                                 ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                                 ns1:exact "U.S. Government Accountability Office" ;
+                                                                                                                 ns1:length "37" ;
+                                                                                                                 ns1:offset "1625" ;
+                                                                                                                 ns1:prefix "agencies involved lacked staff and funding, the " ;
+                                                                                                                 ns1:subject <http://d.opencalais.com/genericHasher-1/f8d5c96e-3d94-3636-a6bb-d86790b1bde1> ;
+                                                                                                                 ns1:suffix " said in a report in 2010." ;
+                                                                                                                 nerd:Organization <http://d.opencalais.com/genericHasher-1/f8d5c96e-3d94-3636-a6bb-d86790b1bde1> .
 
-<http://d.opencalais.com/genericHasher-1/de084cce-4182-33bf-adbf-3f690951ce2c> rdf:type ns2:Organization, nerd:Organization ;
+<http://d.opencalais.com/genericHasher-1/de084cce-4182-33bf-adbf-3f690951ce2c> rdf:type ns2:Organization ,
+                                                                                        nerd:Organization ;
                                                                                ns1:name "Foreign Ministry" ;
                                                                                ns1:nationality "N/A" ;
                                                                                ns1:organizationtype "governmental civilian" .
 
-<id:offset_494_588_Mexico%20expects%20to%20receive%20complete%20financing%20of%20the%20multi-year%20program%20by%20next%20year%2C%20she%20said.> rdf:type ns0:InstanceInfo ;
-                                                                                                                                                 ns1:detection """[as part of the bilateral Merida Initiative. ]Mexico expects to receive complete financing of the multi-year program by next year, she said.[
+<https://github.com/alexlust/NIFOpenCalais#hash_10_94_3d02f028f79725f4d9a893139c4ccd8b_Mexico%20expects%20to%20re> rdf:type ns0:InstanceInfo ;
+                                                                                                                   ns1:detection """[as part of the bilateral Merida Initiative. ]Mexico expects to receive complete financing of the multi-year program by next year, she said.[
 
 We got off to a slow start in part because this]""" ;
-                                                                                                                                                 ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                                                                                                                                 ns1:exact "Mexico expects to receive complete financing of the multi-year program by next year, she said." ;
-                                                                                                                                                 ns1:length "94" ;
-                                                                                                                                                 ns1:offset "494" ;
-                                                                                                                                                 ns1:prefix "as part of the bilateral Merida Initiative. " ;
-                                                                                                                                                 ns1:subject <http://d.opencalais.com/genericHasher-1/2a6cb60c-d693-35cb-ab31-c4a66ebc97d2> ;
-                                                                                                                                                 ns1:suffix """
+                                                                                                                   ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                                   ns1:exact "Mexico expects to receive complete financing of the multi-year program by next year, she said." ;
+                                                                                                                   ns1:length "94" ;
+                                                                                                                   ns1:offset "494" ;
+                                                                                                                   ns1:prefix "as part of the bilateral Merida Initiative. " ;
+                                                                                                                   ns1:subject <http://d.opencalais.com/genericHasher-1/2a6cb60c-d693-35cb-ab31-c4a66ebc97d2> ;
+                                                                                                                   ns1:suffix """
 
 We got off to a slow start in part because this""" .
 
-<id:offset_1553_1568_Central%20America> rdf:type ns0:InstanceInfo ;
-                                        ns1:detection "[9 percent of the promised aid to Mexico and ]Central America[ because agencies involved lacked staff and]" ;
-                                        ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                        ns1:exact "Central America" ;
-                                        ns1:length "15" ;
-                                        ns1:offset "1553" ;
-                                        ns1:prefix "9 percent of the promised aid to Mexico and " ;
-                                        ns1:subject <http://d.opencalais.com/genericHasher-1/f0dda022-5bb0-3d08-815c-a586c67a96b4> ;
-                                        ns1:suffix " because agencies involved lacked staff and" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_15_f3bed765eb1b4a8e4e3d933fb2d132de_Central%20America> rdf:type ns0:InstanceInfo ;
+                                                                                                          ns1:detection "[9 percent of the promised aid to Mexico and ]Central America[ because agencies involved lacked staff and]" ;
+                                                                                                          ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                          ns1:exact "Central America" ;
+                                                                                                          ns1:length "15" ;
+                                                                                                          ns1:offset "1553" ;
+                                                                                                          ns1:prefix "9 percent of the promised aid to Mexico and " ;
+                                                                                                          ns1:subject <http://d.opencalais.com/genericHasher-1/f0dda022-5bb0-3d08-815c-a586c67a96b4> ;
+                                                                                                          ns1:suffix " because agencies involved lacked staff and" ;
+                                                                                                          nerd:PopulatedPlace <http://d.opencalais.com/genericHasher-1/f0dda022-5bb0-3d08-815c-a586c67a96b4> .
 
 <http://d.opencalais.com/genericHasher-1/69fc2ab8-e956-3934-aae0-6769c7f6a981> rdf:type ns5:PersonCareer ;
                                                                                ns1:careertype "political" ;
@@ -450,30 +475,33 @@ We got off to a slow start in part because this""" .
 
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/SocialTag/11> rdf:type ns4:SocialTag ;
                                                                                       ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                                                                      ns1:importance "1" ;
-                                                                                      ns1:name "Social Issues" ;
-                                                                                      ns1:socialtag <http://d.opencalais.com/genericHasher-1/7677911f-f579-309a-9299-bb737b9e23b5> .
+                                                                                      ns1:importance "2" ;
+                                                                                      ns1:name "Polygraph" ;
+                                                                                      ns1:originalValue "Polygraph" ;
+                                                                                      ns1:socialtag <http://d.opencalais.com/genericHasher-1/4d6b6e00-3999-3692-817c-7ae86827563e> .
 
 <http://d.opencalais.com/genericHasher-1/5efb380f-17c0-3343-b47e-05c4fcd7b8b8> rdf:type ns5:Quotation ;
                                                                                ns1:person <http://d.opencalais.com/pershash-1/265e3723-de86-3484-bfdd-655f5f4c3beb> ;
                                                                                ns1:quote "We got off to a slow start in part because this is a completely new cooperation plan" .
 
-<id:offset_1011_1015_U.S.> rdf:type ns0:InstanceInfo ;
-                           ns1:detection "[2006. Mexico received at least $480 million in ]U.S.[ aid under the program since it was signed in]" ;
-                           ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                           ns1:exact "U.S." ;
-                           ns1:length "4" ;
-                           ns1:offset "1011" ;
-                           ns1:prefix "2006. Mexico received at least $480 million in " ;
-                           ns1:subject <http://d.opencalais.com/genericHasher-1/a54ac18b-a956-3b5c-b235-0609ca899305> ;
-                           ns1:suffix " aid under the program since it was signed in" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_4_30ca90015008fcd0430d49fa83683673_U.S.> rdf:type ns0:InstanceInfo ;
+                                                                                            ns1:detection "[2006. Mexico received at least $480 million in ]U.S.[ aid under the program since it was signed in]" ;
+                                                                                            ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                            ns1:exact "U.S." ;
+                                                                                            ns1:length "4" ;
+                                                                                            ns1:offset "1011" ;
+                                                                                            ns1:prefix "2006. Mexico received at least $480 million in " ;
+                                                                                            ns1:subject <http://d.opencalais.com/genericHasher-1/a54ac18b-a956-3b5c-b235-0609ca899305> ;
+                                                                                            ns1:suffix " aid under the program since it was signed in" ;
+                                                                                            nerd:PopulatedPlace <http://d.opencalais.com/genericHasher-1/a54ac18b-a956-3b5c-b235-0609ca899305> .
 
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/Relevance/7> rdf:type ns0:RelevanceInfo ;
                                                                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
                                                                                      ns1:relevance "0.665" ;
                                                                                      ns1:subject <http://d.opencalais.com/genericHasher-1/736a403d-157b-3e80-86a7-acc404607cb2> .
 
-<http://d.opencalais.com/er/company/ralg-tr1r/c514dd53-064e-3116-9110-6920963be084> rdf:type ns7:Company, nerd:Business ;
+<http://d.opencalais.com/er/company/ralg-tr1r/c514dd53-064e-3116-9110-6920963be084> rdf:type ns7:Company ,
+                                                                                             nerd:Organization ;
                                                                                     ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
                                                                                     ns1:name "Bloomberg L.P." ;
                                                                                     ns1:score "1.0" ;
@@ -484,16 +512,18 @@ We got off to a slow start in part because this""" .
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/SocialTag/3> rdf:type ns4:SocialTag ;
                                                                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
                                                                                      ns1:importance "1" ;
-                                                                                     ns1:name "Mexican Drug War" ;
-                                                                                     ns1:originalValue "Mexican Drug War" ;
-                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/3ccf31ec-6316-3d1b-afad-1956fa1c685b> .
+                                                                                     ns1:name "Politics" ;
+                                                                                     ns1:originalValue "Politics" ;
+                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/5e6b0d94-4f12-3589-953e-16a1ff786c9f> .
 
-<http://d.opencalais.com/genericHasher-1/f8d5c96e-3d94-3636-a6bb-d86790b1bde1> rdf:type ns2:Organization, nerd:Organization ;
+<http://d.opencalais.com/genericHasher-1/f8d5c96e-3d94-3636-a6bb-d86790b1bde1> rdf:type ns2:Organization ,
+                                                                                        nerd:Organization ;
                                                                                ns1:name "U.S. Government Accountability Office" ;
                                                                                ns1:nationality "American" ;
                                                                                ns1:organizationtype "governmental civilian" .
 
-<http://d.opencalais.com/genericHasher-1/a54ac18b-a956-3b5c-b235-0609ca899305> rdf:type ns2:Country, nerd:PopulatedPlace ;
+<http://d.opencalais.com/genericHasher-1/a54ac18b-a956-3b5c-b235-0609ca899305> rdf:type ns2:Country ,
+                                                                                        nerd:PopulatedPlace ;
                                                                                ns1:name "United States" .
 
 <http://d.opencalais.com/genericHasher-1/9fcd663c-6cf5-3a62-b7f2-a8fe0612459a> rdf:type ns5:GenericRelations ;
@@ -503,99 +533,105 @@ We got off to a slow start in part because this""" .
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/SocialTag/9> rdf:type ns4:SocialTag ;
                                                                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
                                                                                      ns1:importance "2" ;
-                                                                                     ns1:name "United States Agency for International Development" ;
-                                                                                     ns1:originalValue "United States Agency for International Development" ;
-                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/02bac7af-1907-3e2c-906c-949258a03c92> .
+                                                                                     ns1:name "Felipe Calderón" ;
+                                                                                     ns1:originalValue "Felipe Calderón" ;
+                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/ec3d00b6-43c2-319a-9069-c50c2e5f0a3a> .
 
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/Relevance/16> rdf:type ns0:RelevanceInfo ;
                                                                                       ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
                                                                                       ns1:relevance "0.249" ;
                                                                                       ns1:subject <http://d.opencalais.com/comphash-1/edf6d19b-1098-30a9-bca6-241d2dfdc12b> .
 
-<http://d.opencalais.com/pershash-1/cfcf1aa2-de05-3939-a7d5-10c9c7b3e87b> rdf:type ns2:Person, nerd:Person ;
+<http://d.opencalais.com/pershash-1/cfcf1aa2-de05-3939-a7d5-10c9c7b3e87b> rdf:type ns2:Person ,
+                                                                                   nerd:Person ;
                                                                           ns1:commonname "Barack Obama" ;
                                                                           ns1:name "Barack Obama" ;
                                                                           ns1:nationality "American" ;
                                                                           ns1:persontype "political" .
 
-<http://d.opencalais.com/genericHasher-1/f0dda022-5bb0-3d08-815c-a586c67a96b4> rdf:type ns2:Continent, nerd:PopulatedPlace ;
+<http://d.opencalais.com/genericHasher-1/f0dda022-5bb0-3d08-815c-a586c67a96b4> rdf:type ns2:Continent ,
+                                                                                        nerd:PopulatedPlace ;
                                                                                ns1:name "Central America" .
 
-<id:offset_970_976_Mexico> rdf:type ns0:InstanceInfo ;
-                           ns1:detection "[35,000 victims since he took office in 2006. ]Mexico[ received at least $480 million in U.S. aid under]" ;
-                           ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                           ns1:exact "Mexico" ;
-                           ns1:length "6" ;
-                           ns1:offset "970" ;
-                           ns1:prefix "35,000 victims since he took office in 2006. " ;
-                           ns1:subject <http://d.opencalais.com/genericHasher-1/92956dc3-4c11-340f-b4b5-1266cd1c7c5c> ;
-                           ns1:suffix " received at least $480 million in U.S. aid under" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_6_30a3d82ed7c4bd8e93a9b9bfe8ff80e3_Mexico> rdf:type ns0:InstanceInfo ;
+                                                                                              ns1:detection "[35,000 victims since he took office in 2006. ]Mexico[ received at least $480 million in U.S. aid under]" ;
+                                                                                              ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                              ns1:exact "Mexico" ;
+                                                                                              ns1:length "6" ;
+                                                                                              ns1:offset "970" ;
+                                                                                              ns1:prefix "35,000 victims since he took office in 2006. " ;
+                                                                                              ns1:subject <http://d.opencalais.com/genericHasher-1/92956dc3-4c11-340f-b4b5-1266cd1c7c5c> ;
+                                                                                              ns1:suffix " received at least $480 million in U.S. aid under" ;
+                                                                                              nerd:PopulatedPlace <http://d.opencalais.com/genericHasher-1/92956dc3-4c11-340f-b4b5-1266cd1c7c5c> .
 
-<id:offset_251_493_Espinosa%2C%20in%20an%20interview%20yesterday%2C%20said%20both%20U.S.%20President%20Barack%20Obama%20and%20Secretary%20of%20State%20Hillary%20Clinton%20promised%20to%20disburse%20%24500%20million%20this%20year%20in%20equipment%20and%20aid%20for%20police%20training%20as%20part%20of%20the%20bilateral%20Merida%20Initiative.> rdf:type ns0:InstanceInfo ;
-                                                                                                                                                                                                                                                                                                                                                       ns1:detection """[Affairs Minister Patricia Espinosa said.
+<https://github.com/alexlust/NIFOpenCalais#hash_10_242_95c1d4f1561dcd9ac7fb0c47a42f73bd_Espinosa%2C%20in%20an%20inte> rdf:type ns0:InstanceInfo ;
+                                                                                                                      ns1:detection """[Affairs Minister Patricia Espinosa said.
 
 ]Espinosa, in an interview yesterday, said both U.S. President Barack Obama and Secretary of State Hillary Clinton promised to disburse $500 million this year in equipment and aid for police training as part of the bilateral Merida Initiative.[ Mexico expects to receive complete financing of]""" ;
-                                                                                                                                                                                                                                                                                                                                                       ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                                                                                                                                                                                                                                                                                                                                       ns1:exact "Espinosa, in an interview yesterday, said both U.S. President Barack Obama and Secretary of State Hillary Clinton promised to disburse $500 million this year in equipment and aid for police training as part of the bilateral Merida Initiative." ;
-                                                                                                                                                                                                                                                                                                                                                       ns1:length "242" ;
-                                                                                                                                                                                                                                                                                                                                                       ns1:offset "251" ;
-                                                                                                                                                                                                                                                                                                                                                       ns1:prefix """Affairs Minister Patricia Espinosa said.
+                                                                                                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                                      ns1:exact "Espinosa, in an interview yesterday, said both U.S. President Barack Obama and Secretary of State Hillary Clinton promised to disburse $500 million this year in equipment and aid for police training as part of the bilateral Merida Initiative." ;
+                                                                                                                      ns1:length "242" ;
+                                                                                                                      ns1:offset "251" ;
+                                                                                                                      ns1:prefix """Affairs Minister Patricia Espinosa said.
 
 """ ;
-                                                                                                                                                                                                                                                                                                                                                       ns1:subject <http://d.opencalais.com/genericHasher-1/467980c0-2e97-3be1-89f9-f4066339709c> ,
-                                                                                                                                                                                                                                                                                                                                                                   <http://d.opencalais.com/genericHasher-1/f114457a-8c73-3358-b3f3-2ba367b7c376> ;
-                                                                                                                                                                                                                                                                                                                                                       ns1:suffix " Mexico expects to receive complete financing of" .
+                                                                                                                      ns1:subject <http://d.opencalais.com/genericHasher-1/467980c0-2e97-3be1-89f9-f4066339709c> ,
+                                                                                                                                  <http://d.opencalais.com/genericHasher-1/f114457a-8c73-3358-b3f3-2ba367b7c376> ;
+                                                                                                                      ns1:suffix " Mexico expects to receive complete financing of" .
 
-<http://d.opencalais.com/genericHasher-1/aff31fe5-a3c4-3842-9e42-f60f0dd8fa2b> rdf:type ns2:City, nerd:Municipality ;
+<http://d.opencalais.com/genericHasher-1/aff31fe5-a3c4-3842-9e42-f60f0dd8fa2b> rdf:type ns2:City ,
+                                                                                        nerd:Municipality ;
                                                                                ns1:name "Mexico City" .
 
-<id:offset_1082_1113_former%20President%20George%20W.%20Bush> rdf:type ns0:InstanceInfo ;
-                                                              ns1:detection "[since it was signed in 2008 by Calderon and ]former President George W. Bush[, with $380 million arriving between 2008 and]" ;
-                                                              ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                                              ns1:exact "former President George W. Bush" ;
-                                                              ns1:length "31" ;
-                                                              ns1:offset "1082" ;
-                                                              ns1:prefix "since it was signed in 2008 by Calderon and " ;
-                                                              ns1:subject <http://d.opencalais.com/genericHasher-1/69fc2ab8-e956-3934-aae0-6769c7f6a981> ;
-                                                              ns1:suffix ", with $380 million arriving between 2008 and" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_31_3fa00a6abb346b6ac4cca885f6d7175a_former%20President%20Geo> rdf:type ns0:InstanceInfo ;
+                                                                                                                 ns1:detection "[since it was signed in 2008 by Calderon and ]former President George W. Bush[, with $380 million arriving between 2008 and]" ;
+                                                                                                                 ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                                 ns1:exact "former President George W. Bush" ;
+                                                                                                                 ns1:length "31" ;
+                                                                                                                 ns1:offset "1082" ;
+                                                                                                                 ns1:prefix "since it was signed in 2008 by Calderon and " ;
+                                                                                                                 ns1:subject <http://d.opencalais.com/genericHasher-1/69fc2ab8-e956-3934-aae0-6769c7f6a981> ;
+                                                                                                                 ns1:suffix ", with $380 million arriving between 2008 and" .
 
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/Relevance/4> rdf:type ns0:RelevanceInfo ;
                                                                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
                                                                                      ns1:relevance "0.161" ;
                                                                                      ns1:subject <http://d.opencalais.com/pershash-1/a50a093b-7e08-394a-9a27-3093483d6a9d> .
 
-<id:offset_0_249_Mexico%20expects%20the%20U.S.%20to%20accelerate%20the%20disbursement%20of%20aid%20to%20strengthen%20its%20fight%20against%20drug%20gangs%20and%20put%20back%20on%20track%20a%20%241.4%20billion%20program%20that%20has%20been%20hamstrung%20by%20delays%20in%20recent%20years%2C%20Foreign%20Affairs%20Minister%20Patricia%20Espinosa%20said.> rdf:type ns0:InstanceInfo ;
-                                                                                                                                                                                                                                                                                                                                                                ns1:detection """[]Mexico expects the U.S. to accelerate the disbursement of aid to strengthen its fight against drug gangs and put back on track a $1.4 billion program that has been hamstrung by delays in recent years, Foreign Affairs Minister Patricia Espinosa said.[
+<https://github.com/alexlust/NIFOpenCalais#hash_10_249_86d6d07f3762205b6844cf634ef32624_Mexico%20expects%20the%20U> rdf:type ns0:InstanceInfo ;
+                                                                                                                    ns1:detection """[]Mexico expects the U.S. to accelerate the disbursement of aid to strengthen its fight against drug gangs and put back on track a $1.4 billion program that has been hamstrung by delays in recent years, Foreign Affairs Minister Patricia Espinosa said.[
 
 Espinosa, in an interview yesterday, said both]""" ;
-                                                                                                                                                                                                                                                                                                                                                                ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                                                                                                                                                                                                                                                                                                                                                ns1:exact "Mexico expects the U.S. to accelerate the disbursement of aid to strengthen its fight against drug gangs and put back on track a $1.4 billion program that has been hamstrung by delays in recent years, Foreign Affairs Minister Patricia Espinosa said." ;
-                                                                                                                                                                                                                                                                                                                                                                ns1:length "249" ;
-                                                                                                                                                                                                                                                                                                                                                                ns1:offset "0" ;
-                                                                                                                                                                                                                                                                                                                                                                ns1:prefix "" ;
-                                                                                                                                                                                                                                                                                                                                                                ns1:subject <http://d.opencalais.com/genericHasher-1/651f6490-5e33-35d5-8560-88a0e3c13096> ;
-                                                                                                                                                                                                                                                                                                                                                                ns1:suffix """
+                                                                                                                    ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                                    ns1:exact "Mexico expects the U.S. to accelerate the disbursement of aid to strengthen its fight against drug gangs and put back on track a $1.4 billion program that has been hamstrung by delays in recent years, Foreign Affairs Minister Patricia Espinosa said." ;
+                                                                                                                    ns1:length "249" ;
+                                                                                                                    ns1:offset "0" ;
+                                                                                                                    ns1:prefix "" ;
+                                                                                                                    ns1:subject <http://d.opencalais.com/genericHasher-1/651f6490-5e33-35d5-8560-88a0e3c13096> ;
+                                                                                                                    ns1:suffix """
 
 Espinosa, in an interview yesterday, said both""" .
 
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/SocialTag/8> rdf:type ns4:SocialTag ;
                                                                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
                                                                                      ns1:importance "2" ;
-                                                                                     ns1:name "Polygraph" ;
-                                                                                     ns1:originalValue "Polygraph" ;
-                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/4d6b6e00-3999-3692-817c-7ae86827563e> .
+                                                                                     ns1:name "Mérida Initiative" ;
+                                                                                     ns1:originalValue "Mérida Initiative" ;
+                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/360fd3e0-0535-3693-ad0e-fd599f37da49> .
 
-<id:offset_330_348_Secretary%20of%20State> rdf:type ns0:InstanceInfo ;
-                                           ns1:detection "[said both U.S. President Barack Obama and ]Secretary of State[ Hillary Clinton promised to disburse $500]" ;
-                                           ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                           ns1:exact "Secretary of State" ;
-                                           ns1:length "18" ;
-                                           ns1:offset "330" ;
-                                           ns1:prefix "said both U.S. President Barack Obama and " ;
-                                           ns1:subject <http://d.opencalais.com/genericHasher-1/f1d77aa8-f9b9-3ad1-b6a3-2d516d2d31c6> ;
-                                           ns1:suffix " Hillary Clinton promised to disburse $500" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_18_d10e55a1a23cedc6c8bd2278a7a26d69_Secretary%20of%20State> rdf:type ns0:InstanceInfo ;
+                                                                                                               ns1:detection "[said both U.S. President Barack Obama and ]Secretary of State[ Hillary Clinton promised to disburse $500]" ;
+                                                                                                               ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                               ns1:exact "Secretary of State" ;
+                                                                                                               ns1:length "18" ;
+                                                                                                               ns1:offset "330" ;
+                                                                                                               ns1:prefix "said both U.S. President Barack Obama and " ;
+                                                                                                               ns1:subject <http://d.opencalais.com/genericHasher-1/f1d77aa8-f9b9-3ad1-b6a3-2d516d2d31c6> ;
+                                                                                                               ns1:suffix " Hillary Clinton promised to disburse $500" ;
+                                                                                                               nerd:Work <http://d.opencalais.com/genericHasher-1/f1d77aa8-f9b9-3ad1-b6a3-2d516d2d31c6> .
 
-<http://d.opencalais.com/er/geo/city/ralg-geo1/9cbbc490-ad15-5129-7eb5-ebaf9973749b> rdf:type ns8:City, nerd:Municipality ;
+<http://d.opencalais.com/er/geo/city/ralg-geo1/9cbbc490-ad15-5129-7eb5-ebaf9973749b> rdf:type ns8:City ,
+                                                                                              nerd:Municipality ;
                                                                                      ns1:containedbycountry "Mexico" ;
                                                                                      ns1:containedbystate "Delegaciones del Distrito Federal" ;
                                                                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
@@ -605,106 +641,115 @@ Espinosa, in an interview yesterday, said both""" .
                                                                                      ns1:shortname "Mexico City" ;
                                                                                      ns1:subject <http://d.opencalais.com/genericHasher-1/aff31fe5-a3c4-3842-9e42-f60f0dd8fa2b> .
 
-<http://d.opencalais.com/comphash-1/edf6d19b-1098-30a9-bca6-241d2dfdc12b> rdf:type ns2:Company, nerd:Business ;
+<http://d.opencalais.com/comphash-1/edf6d19b-1098-30a9-bca6-241d2dfdc12b> rdf:type ns2:Company ,
+                                                                                   nerd:Organization ;
                                                                           ns1:name "Bloomberg" ;
                                                                           ns1:nationality "N/A" .
 
-<id:offset_1228_1232_U.S.> rdf:type ns0:InstanceInfo ;
-                           ns1:detection """[from the Foreign Ministry.
+<https://github.com/alexlust/NIFOpenCalais#hash_10_4_f5ba4200553afb3f5f502498150948ef_U.S.> rdf:type ns0:InstanceInfo ;
+                                                                                            ns1:detection """[from the Foreign Ministry.
 
 The shortfall in ]U.S.[ assistance has delayed the delivery of equipment]""" ;
-                           ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                           ns1:exact "U.S." ;
-                           ns1:length "4" ;
-                           ns1:offset "1228" ;
-                           ns1:prefix """from the Foreign Ministry.
+                                                                                            ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                            ns1:exact "U.S." ;
+                                                                                            ns1:length "4" ;
+                                                                                            ns1:offset "1228" ;
+                                                                                            ns1:prefix """from the Foreign Ministry.
 
 The shortfall in """ ;
-                           ns1:subject <http://d.opencalais.com/genericHasher-1/a54ac18b-a956-3b5c-b235-0609ca899305> ;
-                           ns1:suffix " assistance has delayed the delivery of equipment" .
+                                                                                            ns1:subject <http://d.opencalais.com/genericHasher-1/a54ac18b-a956-3b5c-b235-0609ca899305> ;
+                                                                                            ns1:suffix " assistance has delayed the delivery of equipment" ;
+                                                                                            nerd:PopulatedPlace <http://d.opencalais.com/genericHasher-1/a54ac18b-a956-3b5c-b235-0609ca899305> .
 
-<id:offset_858_883_President%20Felipe%20Calderon> rdf:type ns0:InstanceInfo ;
-                                                  ns1:detection "[suffered delays even as the death toll from ]President Felipe Calderon['s crackdown on drug gangs surged to over 35,000]" ;
-                                                  ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                                  ns1:exact "President Felipe Calderon" ;
-                                                  ns1:length "25" ;
-                                                  ns1:offset "858" ;
-                                                  ns1:prefix "suffered delays even as the death toll from " ;
-                                                  ns1:subject <http://d.opencalais.com/genericHasher-1/d81cc8f2-82df-3087-b70b-09ee9623e2a1> ;
-                                                  ns1:suffix "'s crackdown on drug gangs surged to over 35,000" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_25_349ad49573b1cec4bf1c1d9d0e7bf9a0_President%20Felipe%20Cal> rdf:type ns0:InstanceInfo ;
+                                                                                                                 ns1:detection "[suffered delays even as the death toll from ]President Felipe Calderon['s crackdown on drug gangs surged to over 35,000]" ;
+                                                                                                                 ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                                 ns1:exact "President Felipe Calderon" ;
+                                                                                                                 ns1:length "25" ;
+                                                                                                                 ns1:offset "858" ;
+                                                                                                                 ns1:prefix "suffered delays even as the death toll from " ;
+                                                                                                                 ns1:subject <http://d.opencalais.com/genericHasher-1/d81cc8f2-82df-3087-b70b-09ee9623e2a1> ;
+                                                                                                                 ns1:suffix "'s crackdown on drug gangs surged to over 35,000" .
 
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/SocialTag/12> rdf:type ns4:SocialTag ;
                                                                                       ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
                                                                                       ns1:importance "2" ;
-                                                                                      ns1:name "Politics" ;
-                                                                                      ns1:socialtag <http://d.opencalais.com/genericHasher-1/5e6b0d94-4f12-3589-953e-16a1ff786c9f> .
+                                                                                      ns1:name "United States Agency for International Development" ;
+                                                                                      ns1:originalValue "United States Agency for International Development" ;
+                                                                                      ns1:socialtag <http://d.opencalais.com/genericHasher-1/02bac7af-1907-3e2c-906c-949258a03c92> .
 
-<http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e> rdf:type ns2:Position, nerd:Work ;
+<http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e> rdf:type ns2:Position ,
+                                                                                        nerd:Work ;
                                                                                ns1:name "President" .
 
-<id:offset_349_364_Hillary%20Clinton> rdf:type ns0:InstanceInfo ;
-                                      ns1:detection "[President Barack Obama and Secretary of State ]Hillary Clinton[ promised to disburse $500 million this year in]" ;
-                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                      ns1:exact "Hillary Clinton" ;
-                                      ns1:length "15" ;
-                                      ns1:offset "349" ;
-                                      ns1:prefix "President Barack Obama and Secretary of State " ;
-                                      ns1:subject <http://d.opencalais.com/pershash-1/b8148a41-c46e-3f4c-b8d6-d8b368a05c88> ;
-                                      ns1:suffix " promised to disburse $500 million this year in" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_15_d95117de2a711f22016ee0ac3e7dae6e_Hillary%20Clinton> rdf:type ns0:InstanceInfo ;
+                                                                                                          ns1:detection "[President Barack Obama and Secretary of State ]Hillary Clinton[ promised to disburse $500 million this year in]" ;
+                                                                                                          ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                          ns1:exact "Hillary Clinton" ;
+                                                                                                          ns1:length "15" ;
+                                                                                                          ns1:offset "349" ;
+                                                                                                          ns1:prefix "President Barack Obama and Secretary of State " ;
+                                                                                                          ns1:subject <http://d.opencalais.com/pershash-1/b8148a41-c46e-3f4c-b8d6-d8b368a05c88> ;
+                                                                                                          ns1:suffix " promised to disburse $500 million this year in" ;
+                                                                                                          nerd:Person <http://d.opencalais.com/pershash-1/b8148a41-c46e-3f4c-b8d6-d8b368a05c88> .
 
-<id:offset_1542_1548_Mexico> rdf:type ns0:InstanceInfo ;
-                             ns1:detection "[only about 9 percent of the promised aid to ]Mexico[ and Central America because agencies involved]" ;
-                             ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                             ns1:exact "Mexico" ;
-                             ns1:length "6" ;
-                             ns1:offset "1542" ;
-                             ns1:prefix "only about 9 percent of the promised aid to " ;
-                             ns1:subject <http://d.opencalais.com/genericHasher-1/92956dc3-4c11-340f-b4b5-1266cd1c7c5c> ;
-                             ns1:suffix " and Central America because agencies involved" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_6_fe637320f413b86cfbbfb48d4f686a82_Mexico> rdf:type ns0:InstanceInfo ;
+                                                                                              ns1:detection "[only about 9 percent of the promised aid to ]Mexico[ and Central America because agencies involved]" ;
+                                                                                              ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                              ns1:exact "Mexico" ;
+                                                                                              ns1:length "6" ;
+                                                                                              ns1:offset "1542" ;
+                                                                                              ns1:prefix "only about 9 percent of the promised aid to " ;
+                                                                                              ns1:subject <http://d.opencalais.com/genericHasher-1/92956dc3-4c11-340f-b4b5-1266cd1c7c5c> ;
+                                                                                              ns1:suffix " and Central America because agencies involved" ;
+                                                                                              nerd:PopulatedPlace <http://d.opencalais.com/genericHasher-1/92956dc3-4c11-340f-b4b5-1266cd1c7c5c> .
 
 <http://d.opencalais.com/genericHasher-1/26e24970-3d6a-3040-99ba-991f723258c6> rdf:type ns5:GenericRelations ;
                                                                                ns1:relationobject "office" ;
                                                                                ns1:relationsubject <http://d.opencalais.com/pershash-1/cfcf1aa2-de05-3939-a7d5-10c9c7b3e87b> ;
                                                                                ns1:verb "take" .
 
+<https://github.com/alexlust/NIFOpenCalais#hash_10_16_ebfade91ed286c97d8ae35c1ff9d2e77_Foreign%20Ministry> rdf:type ns0:InstanceInfo ;
+                                                                                                           ns1:detection """[2008 and 2010, according to data from the ]Foreign Ministry[.
+
+The shortfall in U.S. assistance has delayed]""" ;
+                                                                                                           ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                           ns1:exact "Foreign Ministry" ;
+                                                                                                           ns1:length "16" ;
+                                                                                                           ns1:offset "1192" ;
+                                                                                                           ns1:prefix "2008 and 2010, according to data from the " ;
+                                                                                                           ns1:subject <http://d.opencalais.com/genericHasher-1/de084cce-4182-33bf-adbf-3f690951ce2c> ;
+                                                                                                           ns1:suffix """.
+
+The shortfall in U.S. assistance has delayed""" ;
+                                                                                                           nerd:Organization <http://d.opencalais.com/genericHasher-1/de084cce-4182-33bf-adbf-3f690951ce2c> .
+
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/Relevance/15> rdf:type ns0:RelevanceInfo ;
                                                                                       ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
                                                                                       ns1:relevance "0.758" ;
                                                                                       ns1:subject <http://d.opencalais.com/genericHasher-1/a54ac18b-a956-3b5c-b235-0609ca899305> .
 
-<id:offset_1192_1208_Foreign%20Ministry> rdf:type ns0:InstanceInfo ;
-                                         ns1:detection """[2008 and 2010, according to data from the ]Foreign Ministry[.
+<https://github.com/alexlust/NIFOpenCalais#hash_10_12_aa57248107f8fd5ad550701dd20905ae_Barack%20Obama> rdf:type ns0:InstanceInfo ;
+                                                                                                       ns1:detection "[ an interview yesterday, said both U.S. President ]Barack Obama[ and Secretary of State Hillary Clinton promised]" ;
+                                                                                                       ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                       ns1:exact "Barack Obama" ;
+                                                                                                       ns1:length "12" ;
+                                                                                                       ns1:offset "313" ;
+                                                                                                       ns1:prefix " an interview yesterday, said both U.S. President " ;
+                                                                                                       ns1:subject <http://d.opencalais.com/pershash-1/cfcf1aa2-de05-3939-a7d5-10c9c7b3e87b> ;
+                                                                                                       ns1:suffix " and Secretary of State Hillary Clinton promised" ;
+                                                                                                       nerd:Person <http://d.opencalais.com/pershash-1/cfcf1aa2-de05-3939-a7d5-10c9c7b3e87b> .
 
-The shortfall in U.S. assistance has delayed]""" ;
-                                         ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                         ns1:exact "Foreign Ministry" ;
-                                         ns1:length "16" ;
-                                         ns1:offset "1192" ;
-                                         ns1:prefix "2008 and 2010, according to data from the " ;
-                                         ns1:subject <http://d.opencalais.com/genericHasher-1/de084cce-4182-33bf-adbf-3f690951ce2c> ;
-                                         ns1:suffix """.
-
-The shortfall in U.S. assistance has delayed""" .
-
-<id:offset_313_325_Barack%20Obama> rdf:type ns0:InstanceInfo ;
-                                   ns1:detection "[ an interview yesterday, said both U.S. President ]Barack Obama[ and Secretary of State Hillary Clinton promised]" ;
-                                   ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                   ns1:exact "Barack Obama" ;
-                                   ns1:length "12" ;
-                                   ns1:offset "313" ;
-                                   ns1:prefix " an interview yesterday, said both U.S. President " ;
-                                   ns1:subject <http://d.opencalais.com/pershash-1/cfcf1aa2-de05-3939-a7d5-10c9c7b3e87b> ;
-                                   ns1:suffix " and Secretary of State Hillary Clinton promised" .
-
-<id:offset_1099_1113_George%20W.%20Bush> rdf:type ns0:InstanceInfo ;
-                                         ns1:detection "[signed in 2008 by Calderon and former President ]George W. Bush[, with $380 million arriving between 2008 and]" ;
-                                         ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                         ns1:exact "George W. Bush" ;
-                                         ns1:length "14" ;
-                                         ns1:offset "1099" ;
-                                         ns1:prefix "signed in 2008 by Calderon and former President " ;
-                                         ns1:subject <http://d.opencalais.com/pershash-1/a50a093b-7e08-394a-9a27-3093483d6a9d> ;
-                                         ns1:suffix ", with $380 million arriving between 2008 and" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_14_a70a79fe979336e519b858ea8d63d41f_George%20W.%20Bush> rdf:type ns0:InstanceInfo ;
+                                                                                                           ns1:detection "[signed in 2008 by Calderon and former President ]George W. Bush[, with $380 million arriving between 2008 and]" ;
+                                                                                                           ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                           ns1:exact "George W. Bush" ;
+                                                                                                           ns1:length "14" ;
+                                                                                                           ns1:offset "1099" ;
+                                                                                                           ns1:prefix "signed in 2008 by Calderon and former President " ;
+                                                                                                           ns1:subject <http://d.opencalais.com/pershash-1/a50a093b-7e08-394a-9a27-3093483d6a9d> ;
+                                                                                                           ns1:suffix ", with $380 million arriving between 2008 and" ;
+                                                                                                           nerd:Person <http://d.opencalais.com/pershash-1/a50a093b-7e08-394a-9a27-3093483d6a9d> .
 
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/meta> rdf:type ns0:DocInfoMeta ;
                                                                               ns1:contentType "text/raw" ;
@@ -713,26 +758,28 @@ The shortfall in U.S. assistance has delayed""" .
                                                                               ns1:langIdVer "DefaultLangId" ;
                                                                               ns1:language "English" ;
                                                                               ns1:processingVer "CalaisJob01" ;
-                                                                              ns1:signature "digestalg-1|ANpcrmfnW5jpPkHdXQBXvcStR0U=|M/9/7hbCwp8lBH9IGoXzdKQtYGg5oxYIVEcr0Pl497Nw0CgDXHtUqA==" ;
+                                                                              ns1:signature "digestalg-1|XiUWYh5MH0gVH5h2Tkive9gEmTY=|HNf0PIiHro8ooRFaNr/d3GovGd9DrIIGVpjBfawfEmsxSI3elasfJg==" ;
                                                                               ns1:stagsVer "1.0.0-b1-2009-11-12_16:54:24" ;
-                                                                              ns1:submissionDate "2012-01-26 15:49:48.937" ;
+                                                                              ns1:submissionDate "2012-03-08 04:22:43.300" ;
                                                                               ns1:submitterCode "a725570a-cfa1-dd80-5c5d-1a4de627326f" .
 
-<id:offset_1445_1448_GAO> rdf:type ns0:InstanceInfo ;
-                          ns1:detection """[training of Mexican officials, according to the ]GAO[ report.
+<https://github.com/alexlust/NIFOpenCalais#hash_10_3_c326e023295bf357fedaf1104ab76fc1_GAO> rdf:type ns0:InstanceInfo ;
+                                                                                           ns1:detection """[training of Mexican officials, according to the ]GAO[ report.
 
 Until a year ago the U.S. had delivered]""" ;
-                          ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                          ns1:exact "GAO" ;
-                          ns1:length "3" ;
-                          ns1:offset "1445" ;
-                          ns1:prefix "training of Mexican officials, according to the " ;
-                          ns1:subject <http://d.opencalais.com/genericHasher-1/f8d5c96e-3d94-3636-a6bb-d86790b1bde1> ;
-                          ns1:suffix """ report.
+                                                                                           ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                           ns1:exact "GAO" ;
+                                                                                           ns1:length "3" ;
+                                                                                           ns1:offset "1445" ;
+                                                                                           ns1:prefix "training of Mexican officials, according to the " ;
+                                                                                           ns1:subject <http://d.opencalais.com/genericHasher-1/f8d5c96e-3d94-3636-a6bb-d86790b1bde1> ;
+                                                                                           ns1:suffix """ report.
 
-Until a year ago the U.S. had delivered""" .
+Until a year ago the U.S. had delivered""" ;
+                                                                                           nerd:Organization <http://d.opencalais.com/genericHasher-1/f8d5c96e-3d94-3636-a6bb-d86790b1bde1> .
 
-<http://d.opencalais.com/er/geo/country/ralg-geo1/4edfc924-721a-bb77-4d54-47bade86ea5d> rdf:type ns8:Country, nerd:PopulatedPlace ;
+<http://d.opencalais.com/er/geo/country/ralg-geo1/4edfc924-721a-bb77-4d54-47bade86ea5d> rdf:type ns8:Country ,
+                                                                                                 nerd:PopulatedPlace ;
                                                                                         ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
                                                                                         ns1:latitude "19.0" ;
                                                                                         ns1:longitude "-99.0" ;
@@ -751,60 +798,70 @@ Until a year ago the U.S. had delivered""" .
                                                                                ns1:position <http://d.opencalais.com/genericHasher-1/0d87e8a5-fb41-33c9-a1fb-bedf134b384e> ;
                                                                                ns1:status "current" .
 
-<id:offset_1479_1483_U.S.> rdf:type ns0:InstanceInfo ;
-                           ns1:detection """[to the GAO report.
+<http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/SocialTag/13> rdf:type ns4:SocialTag ;
+                                                                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                      ns1:importance "1" ;
+                                                                                      ns1:name "Social Issues" ;
+                                                                                      ns1:socialtag <http://d.opencalais.com/genericHasher-1/7677911f-f579-309a-9299-bb737b9e23b5> .
+
+<https://github.com/alexlust/NIFOpenCalais#hash_10_4_d9cecdded0f533a6c1104557cd50c43f_U.S.> rdf:type ns0:InstanceInfo ;
+                                                                                            ns1:detection """[to the GAO report.
 
 Until a year ago the ]U.S.[ had delivered only about 9 percent of the]""" ;
-                           ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                           ns1:exact "U.S." ;
-                           ns1:length "4" ;
-                           ns1:offset "1479" ;
-                           ns1:prefix """to the GAO report.
+                                                                                            ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                            ns1:exact "U.S." ;
+                                                                                            ns1:length "4" ;
+                                                                                            ns1:offset "1479" ;
+                                                                                            ns1:prefix """to the GAO report.
 
 Until a year ago the """ ;
-                           ns1:subject <http://d.opencalais.com/genericHasher-1/a54ac18b-a956-3b5c-b235-0609ca899305> ;
-                           ns1:suffix " had delivered only about 9 percent of the" .
+                                                                                            ns1:subject <http://d.opencalais.com/genericHasher-1/a54ac18b-a956-3b5c-b235-0609ca899305> ;
+                                                                                            ns1:suffix " had delivered only about 9 percent of the" ;
+                                                                                            nerd:PopulatedPlace <http://d.opencalais.com/genericHasher-1/a54ac18b-a956-3b5c-b235-0609ca899305> .
 
-<id:offset_579_582_she> rdf:type ns0:InstanceInfo ;
-                        ns1:detection """[of the multi-year program by next year, ]she[ said.
+<https://github.com/alexlust/NIFOpenCalais#hash_10_3_ab0e5394186f1936c0c9621602e2eddb_she> rdf:type ns0:InstanceInfo ;
+                                                                                           ns1:detection """[of the multi-year program by next year, ]she[ said.
 
 We got off to a slow start in part]""" ;
-                        ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                        ns1:exact "she" ;
-                        ns1:length "3" ;
-                        ns1:offset "579" ;
-                        ns1:prefix "of the multi-year program by next year, " ;
-                        ns1:subject <http://d.opencalais.com/pershash-1/265e3723-de86-3484-bfdd-655f5f4c3beb> ;
-                        ns1:suffix """ said.
+                                                                                           ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                           ns1:exact "she" ;
+                                                                                           ns1:length "3" ;
+                                                                                           ns1:offset "579" ;
+                                                                                           ns1:prefix "of the multi-year program by next year, " ;
+                                                                                           ns1:subject <http://d.opencalais.com/pershash-1/265e3723-de86-3484-bfdd-655f5f4c3beb> ;
+                                                                                           ns1:suffix """ said.
 
-We got off to a slow start in part""" .
+We got off to a slow start in part""" ;
+                                                                                           nerd:Person <http://d.opencalais.com/pershash-1/265e3723-de86-3484-bfdd-655f5f4c3beb> .
 
-<id:offset_1120_1132_%24380%20million> rdf:type ns0:InstanceInfo ;
-                                       ns1:detection "[and former President George W. Bush, with ]$380 million[ arriving between 2008 and 2010, according to]" ;
-                                       ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                       ns1:exact "$380 million" ;
-                                       ns1:length "12" ;
-                                       ns1:offset "1120" ;
-                                       ns1:prefix "and former President George W. Bush, with " ;
-                                       ns1:subject <http://d.opencalais.com/genericHasher-1/736a403d-157b-3e80-86a7-acc404607cb2> ;
-                                       ns1:suffix " arriving between 2008 and 2010, according to" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_12_f0052a17d28bfb1017c422db92aa679e_%24380%20million> rdf:type ns0:InstanceInfo ;
+                                                                                                         ns1:detection "[and former President George W. Bush, with ]$380 million[ arriving between 2008 and 2010, according to]" ;
+                                                                                                         ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                         ns1:exact "$380 million" ;
+                                                                                                         ns1:length "12" ;
+                                                                                                         ns1:offset "1120" ;
+                                                                                                         ns1:prefix "and former President George W. Bush, with " ;
+                                                                                                         ns1:subject <http://d.opencalais.com/genericHasher-1/736a403d-157b-3e80-86a7-acc404607cb2> ;
+                                                                                                         ns1:suffix " arriving between 2008 and 2010, according to" ;
+                                                                                                         nerd:Currency <http://d.opencalais.com/genericHasher-1/736a403d-157b-3e80-86a7-acc404607cb2> .
 
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/SocialTag/6> rdf:type ns4:SocialTag ;
                                                                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
                                                                                      ns1:importance "2" ;
-                                                                                     ns1:name "Felipe Calderón" ;
-                                                                                     ns1:originalValue "Felipe Calderón" ;
-                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/ec3d00b6-43c2-319a-9069-c50c2e5f0a3a> .
+                                                                                     ns1:name "Mexican Drug War" ;
+                                                                                     ns1:originalValue "Mexican Drug War" ;
+                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/3ccf31ec-6316-3d1b-afad-1956fa1c685b> .
 
-<id:offset_946_948_he> rdf:type ns0:InstanceInfo ;
-                       ns1:detection "[drug gangs surged to over 35,000 victims since ]he[ took office in 2006. Mexico received at least]" ;
-                       ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                       ns1:exact "he" ;
-                       ns1:length "2" ;
-                       ns1:offset "946" ;
-                       ns1:prefix "drug gangs surged to over 35,000 victims since " ;
-                       ns1:subject <http://d.opencalais.com/pershash-1/cfcf1aa2-de05-3939-a7d5-10c9c7b3e87b> ;
-                       ns1:suffix " took office in 2006. Mexico received at least" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_2_e5f2bfb9fa5e6160ea48db8fefdb1e62_he> rdf:type ns0:InstanceInfo ;
+                                                                                          ns1:detection "[drug gangs surged to over 35,000 victims since ]he[ took office in 2006. Mexico received at least]" ;
+                                                                                          ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                          ns1:exact "he" ;
+                                                                                          ns1:length "2" ;
+                                                                                          ns1:offset "946" ;
+                                                                                          ns1:prefix "drug gangs surged to over 35,000 victims since " ;
+                                                                                          ns1:subject <http://d.opencalais.com/pershash-1/cfcf1aa2-de05-3939-a7d5-10c9c7b3e87b> ;
+                                                                                          ns1:suffix " took office in 2006. Mexico received at least" ;
+                                                                                          nerd:Person <http://d.opencalais.com/pershash-1/cfcf1aa2-de05-3939-a7d5-10c9c7b3e87b> .
 
 <http://d.opencalais.com/genericHasher-1/57348b5b-e93c-356a-9558-f8de0b12d9ac> rdf:type ns5:PersonCareer ;
                                                                                ns1:careertype "political" ;
@@ -822,54 +879,65 @@ We got off to a slow start in part""" .
                                                                                       ns1:relevance "0.161" ;
                                                                                       ns1:subject <http://d.opencalais.com/genericHasher-1/de084cce-4182-33bf-adbf-3f690951ce2c> .
 
-<http://d.opencalais.com/pershash-1/a50a093b-7e08-394a-9a27-3093483d6a9d> rdf:type ns2:Person, nerd:Person ;
+<http://d.opencalais.com/pershash-1/a50a093b-7e08-394a-9a27-3093483d6a9d> rdf:type ns2:Person ,
+                                                                                   nerd:Person ;
                                                                           ns1:commonname "George Bush" ;
                                                                           ns1:name "George W. Bush" ;
                                                                           ns1:nationality "N/A" ;
                                                                           ns1:persontype "political" .
 
-<http://d.opencalais.com/pershash-1/265e3723-de86-3484-bfdd-655f5f4c3beb> rdf:type ns2:Person, nerd:Person ;
+<http://d.opencalais.com/pershash-1/265e3723-de86-3484-bfdd-655f5f4c3beb> rdf:type ns2:Person ,
+                                                                                   nerd:Person ;
                                                                           ns1:commonname "Patricia Espinosa" ;
                                                                           ns1:name "Patricia Espinosa" ;
                                                                           ns1:nationality "N/A" ;
                                                                           ns1:persontype "political" .
 
-<id:offset_676_688_Espinosa%2C%2052> rdf:type ns0:InstanceInfo ;
-                                     ns1:detection "[this is a completely new cooperation plan, ]Espinosa, 52[, said at Bloomberg's offices in Mexico City. We]" ;
-                                     ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                     ns1:exact "Espinosa, 52" ;
-                                     ns1:length "12" ;
-                                     ns1:offset "676" ;
-                                     ns1:prefix "this is a completely new cooperation plan, " ;
-                                     ns1:subject <http://d.opencalais.com/genericHasher-1/5b681849-bb03-386e-8b40-cff2d5acbabd> ;
-                                     ns1:suffix ", said at Bloomberg's offices in Mexico City. We" .
+<http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/SocialTag/14> rdf:type ns4:SocialTag ;
+                                                                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                      ns1:importance "2" ;
+                                                                                      ns1:name "Politics" ;
+                                                                                      ns1:socialtag <http://d.opencalais.com/genericHasher-1/5e6b0d94-4f12-3589-953e-16a1ff786c9f> .
 
-<id:offset_676_684_Espinosa> rdf:type ns0:InstanceInfo ;
-                             ns1:detection "[this is a completely new cooperation plan, ]Espinosa[, 52, said at Bloomberg's offices in Mexico City.]" ;
-                             ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                             ns1:exact "Espinosa" ;
-                             ns1:length "8" ;
-                             ns1:offset "676" ;
-                             ns1:prefix "this is a completely new cooperation plan, " ;
-                             ns1:subject <http://d.opencalais.com/pershash-1/265e3723-de86-3484-bfdd-655f5f4c3beb> ;
-                             ns1:suffix ", 52, said at Bloomberg's offices in Mexico City." .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_12_f8baf634fd9a958927faea264e6105c0_Espinosa%2C%2052> rdf:type ns0:InstanceInfo ;
+                                                                                                         ns1:detection "[this is a completely new cooperation plan, ]Espinosa, 52[, said at Bloomberg's offices in Mexico City. We]" ;
+                                                                                                         ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                         ns1:exact "Espinosa, 52" ;
+                                                                                                         ns1:length "12" ;
+                                                                                                         ns1:offset "676" ;
+                                                                                                         ns1:prefix "this is a completely new cooperation plan, " ;
+                                                                                                         ns1:subject <http://d.opencalais.com/genericHasher-1/5b681849-bb03-386e-8b40-cff2d5acbabd> ;
+                                                                                                         ns1:suffix ", said at Bloomberg's offices in Mexico City. We" .
+
+<https://github.com/alexlust/NIFOpenCalais#hash_10_8_077243055165c4e1a80d74305b52756e_Espinosa> rdf:type ns0:InstanceInfo ;
+                                                                                                ns1:detection "[this is a completely new cooperation plan, ]Espinosa[, 52, said at Bloomberg's offices in Mexico City.]" ;
+                                                                                                ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                ns1:exact "Espinosa" ;
+                                                                                                ns1:length "8" ;
+                                                                                                ns1:offset "676" ;
+                                                                                                ns1:prefix "this is a completely new cooperation plan, " ;
+                                                                                                ns1:subject <http://d.opencalais.com/pershash-1/265e3723-de86-3484-bfdd-655f5f4c3beb> ;
+                                                                                                ns1:suffix ", 52, said at Bloomberg's offices in Mexico City." ;
+                                                                                                nerd:Person <http://d.opencalais.com/pershash-1/265e3723-de86-3484-bfdd-655f5f4c3beb> .
 
 <http://d.opencalais.com/genericHasher-1/651f6490-5e33-35d5-8560-88a0e3c13096> rdf:type ns5:Quotation ;
                                                                                ns1:person <http://d.opencalais.com/pershash-1/265e3723-de86-3484-bfdd-655f5f4c3beb> ;
                                                                                ns1:persondescription "Foreign Affairs Minister" ;
                                                                                ns1:quote "Mexico expects the U.S. to accelerate the disbursement of aid to strengthen its fight against drug gangs and put back on track a $1.4 billion program that has been hamstrung by delays in recent years" .
 
-<id:offset_995_1007_%24480%20million> rdf:type ns0:InstanceInfo ;
-                                      ns1:detection "[ he took office in 2006. Mexico received at least ]$480 million[ in U.S. aid under the program since it was]" ;
-                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                      ns1:exact "$480 million" ;
-                                      ns1:length "12" ;
-                                      ns1:offset "995" ;
-                                      ns1:prefix " he took office in 2006. Mexico received at least " ;
-                                      ns1:subject <http://d.opencalais.com/genericHasher-1/736a403d-157b-3e80-86a7-acc404607cb2> ;
-                                      ns1:suffix " in U.S. aid under the program since it was" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_12_935e282277ded8e25a5b8b65c6072e5e_%24480%20million> rdf:type ns0:InstanceInfo ;
+                                                                                                         ns1:detection "[ he took office in 2006. Mexico received at least ]$480 million[ in U.S. aid under the program since it was]" ;
+                                                                                                         ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                         ns1:exact "$480 million" ;
+                                                                                                         ns1:length "12" ;
+                                                                                                         ns1:offset "995" ;
+                                                                                                         ns1:prefix " he took office in 2006. Mexico received at least " ;
+                                                                                                         ns1:subject <http://d.opencalais.com/genericHasher-1/736a403d-157b-3e80-86a7-acc404607cb2> ;
+                                                                                                         ns1:suffix " in U.S. aid under the program since it was" ;
+                                                                                                         nerd:Currency <http://d.opencalais.com/genericHasher-1/736a403d-157b-3e80-86a7-acc404607cb2> .
 
-<http://d.opencalais.com/er/geo/country/ralg-geo1/152649df-347e-e289-1a9e-acc883e07d17> rdf:type ns8:Country, nerd:PopulatedPlace ;
+<http://d.opencalais.com/er/geo/country/ralg-geo1/152649df-347e-e289-1a9e-acc883e07d17> rdf:type ns8:Country ,
+                                                                                                 nerd:PopulatedPlace ;
                                                                                         ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
                                                                                         ns1:latitude "40.4230003233" ;
                                                                                         ns1:longitude "-98.7372244786" ;
@@ -879,9 +947,9 @@ We got off to a slow start in part""" .
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/SocialTag/7> rdf:type ns4:SocialTag ;
                                                                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
                                                                                      ns1:importance "2" ;
-                                                                                     ns1:name "Patricia Espinosa" ;
-                                                                                     ns1:originalValue "Patricia Espinosa" ;
-                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/d756de1b-825a-30b1-bb2e-a4e279577876> .
+                                                                                     ns1:name "Military of Mexico" ;
+                                                                                     ns1:originalValue "Military of Mexico" ;
+                                                                                     ns1:socialtag <http://d.opencalais.com/genericHasher-1/8251fd4d-37ef-3761-88ef-18c18b0efc09> .
 
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/Relevance/3> rdf:type ns0:RelevanceInfo ;
                                                                                      ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
@@ -898,31 +966,33 @@ We got off to a slow start in part""" .
                                                                                ns1:gender "F" ;
                                                                                ns1:person <http://d.opencalais.com/pershash-1/265e3723-de86-3484-bfdd-655f5f4c3beb> .
 
-<http://d.opencalais.com/pershash-1/b8148a41-c46e-3f4c-b8d6-d8b368a05c88> rdf:type ns2:Person, nerd:Person ;
+<http://d.opencalais.com/pershash-1/b8148a41-c46e-3f4c-b8d6-d8b368a05c88> rdf:type ns2:Person ,
+                                                                                   nerd:Person ;
                                                                           ns1:commonname "Hillary Clinton" ;
                                                                           ns1:name "Hillary Clinton" ;
                                                                           ns1:nationality "N/A" ;
                                                                           ns1:persontype "political" .
 
-<id:offset_946_968_he%20took%20office%20in%202006> rdf:type ns0:InstanceInfo ;
-                                                   ns1:detection "[drug gangs surged to over 35,000 victims since ]he took office in 2006[. Mexico received at least $480 million in U.S.]" ;
-                                                   ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                                                   ns1:exact "he took office in 2006" ;
-                                                   ns1:length "22" ;
-                                                   ns1:offset "946" ;
-                                                   ns1:prefix "drug gangs surged to over 35,000 victims since " ;
-                                                   ns1:subject <http://d.opencalais.com/genericHasher-1/26e24970-3d6a-3040-99ba-991f723258c6> ;
-                                                   ns1:suffix ". Mexico received at least $480 million in U.S." .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_22_60de50e3afbf0833576dadcaeb41f722_he%20took%20office%20in%2020> rdf:type ns0:InstanceInfo ;
+                                                                                                                     ns1:detection "[drug gangs surged to over 35,000 victims since ]he took office in 2006[. Mexico received at least $480 million in U.S.]" ;
+                                                                                                                     ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                                                     ns1:exact "he took office in 2006" ;
+                                                                                                                     ns1:length "22" ;
+                                                                                                                     ns1:offset "946" ;
+                                                                                                                     ns1:prefix "drug gangs surged to over 35,000 victims since " ;
+                                                                                                                     ns1:subject <http://d.opencalais.com/genericHasher-1/26e24970-3d6a-3040-99ba-991f723258c6> ;
+                                                                                                                     ns1:suffix ". Mexico received at least $480 million in U.S." .
 
-<id:offset_0_6_Mexico> rdf:type ns0:InstanceInfo ;
-                       ns1:detection "[]Mexico[ expects the U.S. to accelerate the disbursement]" ;
-                       ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
-                       ns1:exact "Mexico" ;
-                       ns1:length "6" ;
-                       ns1:offset "0" ;
-                       ns1:prefix "" ;
-                       ns1:subject <http://d.opencalais.com/genericHasher-1/92956dc3-4c11-340f-b4b5-1266cd1c7c5c> ;
-                       ns1:suffix " expects the U.S. to accelerate the disbursement" .
+<https://github.com/alexlust/NIFOpenCalais#hash_10_6_1e77ef93c322742fb8c77cad27125a8c_Mexico> rdf:type ns0:InstanceInfo ;
+                                                                                              ns1:detection "[]Mexico[ expects the U.S. to accelerate the disbursement]" ;
+                                                                                              ns1:docId <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6> ;
+                                                                                              ns1:exact "Mexico" ;
+                                                                                              ns1:length "6" ;
+                                                                                              ns1:offset "0" ;
+                                                                                              ns1:prefix "" ;
+                                                                                              ns1:subject <http://d.opencalais.com/genericHasher-1/92956dc3-4c11-340f-b4b5-1266cd1c7c5c> ;
+                                                                                              ns1:suffix " expects the U.S. to accelerate the disbursement" ;
+                                                                                              nerd:PopulatedPlace <http://d.opencalais.com/genericHasher-1/92956dc3-4c11-340f-b4b5-1266cd1c7c5c> .
 
 <http://d.opencalais.com/dochash-1/ab494866-2985-3c8d-96d5-7cfb5b4034a6/Instance/37> rdf:type ns0:InstanceInfo ;
                                                                                      ns1:detection """[has been hamstrung by delays in recent years, ]Foreign Affairs Minister Patricia Espinosa[ said.
